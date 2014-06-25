@@ -11,4 +11,10 @@ B.md - Appendix B - Android with Eclipse Installation and Setup
 
 C.md - Appendix C - iOS Installation and Setup
 
+D.md - Appendix D - Mac OSX Installation and Setup
+
+E.md - Appendix E - Linux Installation and Setup
+
+F.md - Appendix F - Win32 Installation and Setup
+
 1.md - Chapter 1 - About
