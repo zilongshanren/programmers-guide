@@ -10,6 +10,6 @@
 * Download [cocos2d-x](http://cocos2d-x.org/download) and unzip it. (maybe: ~/) 
 
 ## Compile and Run the TestCpp Project
-* Open file "cocos2d-win32.vc2012.sln" in the "build" folder
+* Open "cocos2d-win32.vc2012.sln" in the "build" folder
 
-- Right click the "TestCpp" project, and select "Set as StartUp Project", then you can compile and run the TestCpp project. here is the screenshot:
+* Right click the "TestCpp" project, and select "Set as StartUp Project". Compile and run the "TestCpp" project.
