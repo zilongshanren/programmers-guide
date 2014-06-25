@@ -5,8 +5,10 @@
 * Cocos2d-x v3.0 ([HERE](http://cocos2d-x.org/download))
 * CMake 2.6+
 
-## Install Dependencies
-* The dependencies are:
+## Prerequisite 
+* Download [cocos2d-x](http://cocos2d-x.org/download) and unzip it. (maybe: ~/) 
+
+* Install dependencies. The dependencies are:
 
 		libx11-dev
 		libxmu-dev
