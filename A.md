@@ -20,11 +20,16 @@
 * Install and verify `Apache Ant` ([Apache.org](http://ant.apache.org/bindownload.cgi))
 
 * Run `setup.py` to configure your Android development environment. This will set the necessary environment variables needed. If you haven't configured this environment before, you will be prompted to enter paths for variables that are not found.
+
 ** Caution: You must *not* use the `~` sign. Use the full path to your *home* directory. Otherwise, the scripts will fail due to error path value.
+
 ** `*COCOS2D_CONSOLE_ROOT*` environment variable to point to the *bin* directory under *~/cocos2d-x/tools/cocos2d-console* directory.
+
 ** `*NDK_ROOT*` environment variable to point to the location of where you put the NDK. (i.e android-ndk-r9d/)
+
 ** `*ANDROID_SDK_ROOT*` environment variable to point to the location of where you put the `adt-bundle`.  Example `/Users/guanghui/AndroidDev/adt-bundle-mac-x86_64-20130522/sdk/`. The adt-bundle-mac-x86_64-xxxx, the xxxx number maybe different. So please note this non-trival difference.
-** `*ANT_ROOT*` environment variable to point to the location of where you put `apache-ant-x.x.x`.  The `apache-ant-x.x.x`, the x.x.x number maybe different. So please note this non-trival difference.
+
+** `*ANT_ROOT*` environment variable to point to the location of where you put `apache-ant-x.x.x`.  The `apache-ant-x.x.x`, the x.x.x number maybe different. 
 
 * In your `cocos2d-x` directory run` python setup.py`
 
