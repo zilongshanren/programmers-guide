@@ -20,3 +20,6 @@ F.md - Appendix F - Win32 Installation and Setup
 1.md - Chapter 1 - About
 
 2.md - Chapter 2 - Directors and Caches
+
+3.md - Chapter 3 - Nodes, Scenes and Layers
+
