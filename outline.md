@@ -1,126 +1,140 @@
 # Cocos2d-x Programmers Guide
 ## C++ version
 
-## Topics 
+## Table Of Contents
 
 1. About Cocos2d-x
-  1. A very brief history
-     * launched in July 2010, cocos2d-x is the best open-source game engine available. 
-     * Versioning information (i.e C++, JS, Lua, not related to Cocos2d-iphone, etc)
+    * A very brief history
+        * launched in July 2010, cocos2d-x is the best open-source game engine available. 
+        * Versioning information (i.e C++, JS, Lua, not related to Cocos2d-iphone, etc)
          * cocos2d-x comes in a variety of flavors
-             * c++ [c++](http://www.cocos2d-x.org/products#cocos2dx)
-             * JS [JS](http://www.cocos2d-x.org/products#cocos2dx-js)
-		      * Lua [Lua](http://www.cocos2d-x.org/products#cocos2dx-lua)
+             * c++[c++](http://www.cocos2d-x.org/products#cocos2dx)
+		      * Lua[Lua](http://www.cocos2d-x.org/products#cocos2dx-lua)
+    *  Prerequisites
+	       * Operating systems and tools supported
+	          * For Android development
+	          * For iOS and OSX development
+	          * For Linux development
+	          * For Windows and Windows Phone development 
+    * Where to get help
+           * [Official Forums](http://http://discuss.cocos2d-x.org)
+            
+2. Jumping into Cocos2d-x (We are building a simple game, no explanation)
+    * Installation - See appropriate Appendix
+    * Getting Started    * Creating Your First Scene    * Adding Content to the Scene    * Using Actions to Animate Scenes
+    * Transitioning Between Scenes    * Building Complex Content Using Nodes
+    * Creating Nodes That Interact with Each Other
 
-  2.  Prerequisites
-		* Operating systems and tools supported
-	      * For Android development
-	      * For iOS and OSX development
-	      * For Linux development
-	      * For Windows and Windows Phone development 
+3. Sprite and Nodes
+    * What are Sprites
+    * Creating Sprites     
+        * Creating a Textured Sprite
+        * Creating an Untextured Sprite
+        * Creating a Sprite From a SpriteFrame
+        * Creating a Sprite From SpriteCache
+        * Creating a Sprite From a Rect
+    * Sprite Manipulation
+        * Resizing
+        * Anchor Point and Position    
+    * SpriteSheets
+    
+4. Actions To Nodes
+    * What are Basic Actions
+        * Animate
+        * Fade In/Out
+        * Move
+        * Rotate
+        * Scale
+        * Tint
+        * Tweening and Easing
+    * What are Sequences
+        * Spawn
+        * Reverse    
+    * Running Actions and Sequences
 
-  3. Where to get help
-      * [Official Forums](http://http://discuss.cocos2d-x.org)
+5. Building and Transitioning Scenes
+    * What is a Scene?
+    * Creating a Scene
+        * Creating a Node Tree
+        * Node properties to its descendants
+    * Coordinate Systems
+        * Converting between coordinate systems
+    * Transitioning between Scenes
 
-2. Director, Caches
+6. UI
+    * Labels
+         * BMFont
+         * TTF
+         * Label Atlas
+         * SystemFont
+    * Label examples
+    * Menu/Menu Items
+        * What makes up a menu
+        * Menu Items and adding to a Menu
+        * Examples
+             * create Menu with 1 item.
+             * create Menu from array of items
+             * Lambdas
+    * Buttons
+    * Scroll
+    * Layout
+    
+7. Other Node Types
+    * TMX
+    * Particle
+    * Parallax
+    * Video
+   
+8. Dispatcher
+    * What is the EventDispatch mechanism?
+        * responds to user events.
+        * The basics:
+            * Event listeners encapsulate your event processing code.
+            * Event dispatcher notifies listeners of user events.
+            * Event objects contain information about the events.
+     * 5 types of event listeners.
+         * `EventListenerTouch` - responds to touch events
+             * describe what to override.
+         * `EventListenerKeyboard` - responds to keyboard events
+             * describe what to override.
+         * `EventListenerAcceleration` - responds to accelerometer events    
+             * describe what to override.
+         * `EventListenMouse` - responds to mouse events
+             * describe what to override.
+         * `EventListenerCustom` - responds to custom events   
+             * describe what to override.
+     * Registering event with the dispatcher
+     * Removing events from the dispatcher9. 3D
+    * 3D Sprite
+    * 3D Actions
+    * 3D Animations
+    * Placeholders for: Lights, Shadows, Cameras
 
-3. Node, Scene, Layers
- * Understanding Node and Node concepts
- * Scene, creating a Scene
- * Transitioning Scene
- * Layers, creating and working with Layers 
+10. Lua
+    * call custom c++ from Lua
+    * bindings to c++
+    * subclassing
+    * Placeholders for: memory management, Debug a Lua Game
 
-4. Dispatchers
- * What is the EventDispatch mechanism?
-     * responds to user events.
-         * The basics:
-         * Event listeners encapsulate your event processing code.
-         * Event dispatcher notifies listeners of user events.
-         * Event objects contain information about the events.
- * 5 types of event listeners.
-     * `EventListenerTouch` - responds to touch events
-         * describe what to override.
-     * `EventListenerKeyboard` - responds to keyboard events
-         * describe what to override.
-     * `EventListenerAcceleration` - responds to accelerometer events    
-         * describe what to override.
-     * `EventListenMouse` - responds to mouse events
-         * describe what to override.
-     * `EventListenerCustom` - responds to custom events   
-         * describe what to override.
- * Registering event with the dispatcher
- * Removing events from the dispatcher
+11. Services
+    * other SDK's
+    * Plugin-X
+    * Placeholders - IAP, FB
+    
+12. Physics
+    * What options and why integrated physics engine
+    * Physics concepts
+    * Physics world, bodies
+    * Collision
+    * Examples
 
-5. Sprites
- * Sprite overview
- * 2D Sprites, manipulating, textures
-     * various create methods
- * 3D Sprites
-     * supported formats
-     * various create methods
- * Sprite Sheets and tools
-     * what are sprite sheets
-     * benefits
- * Sprite Cache
-     * what is the Sprite Cache
-     * benefits and why use it
- * Sprite manipulation - position, size, basic action
-     * position
-     * size
-     * basic actions
- * RenderTexture
-     * what is a render texture
-     * how do you use it?
-
-6. Actions, Sequences
- * What are Actions?
-    * Action examples
-        * refer to API docs for complete listing
- * What are Sequences
-    * Sequence examples
-        * refer to API docs for complete listing
-
-7. Menu, MenuItems
- * What makes up a menu
- * Menu Items and adding to a Menu
- * Examples
-     * create Menu with 1 item.
-     * create Menu from array of items
-     * Lambdas
-
-8. Labels
- * Available Label types
-     * BMFont
-     * TTF
-     * Label Atlas
-     * SystemFont
- * Label examples
-
-9. Physics
- * What options and why integrated physics engine
- * Physics concepts
- * Physics world, bodies
- * Collision
- * Examples
-
-10. Advanced Topics
- * Custom OpenGL (what to cover here? CustomCommand?)
- * c++11 usage
- * rendering pipeline
-
-11. Misc topics
- * Sound
- * SQLite
- * Subclass Cocos2d-x classes
- * Data structures (i.e Vector)
-
-12. Installation and Setup
- * Android (with Terminal and Eclipse)
- * iOS
- * OS X
- * Linux
- * Windows
- * Windows Phone
- * cocos command-line tool overview
- * creating a new project, compiling, testing.
-
+13. Advanced Topics
+    * Best Practice - Optimization, memory, performance, profiling
+    * Sound
+    * SQLite
+    * Subclass Cocos2d-x classes
+    * Data structures (i.e Vector)
+    * Custom OpenGL (what to cover here? CustomCommand?)
+    * c++11 usage
+    * rendering pipeline (notes about this in the wiki)
+    * networking - curl, http
