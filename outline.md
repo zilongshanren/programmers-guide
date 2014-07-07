@@ -1,5 +1,5 @@
 # Cocos2d-x Programmers Guide
-## C++ version
+## C++ and Lua
 
 ## Table Of Contents
 
@@ -85,7 +85,7 @@
     * Parallax
     * Video
    
-8. Dispatcher
+8. Event Dispatcher
     * What is the EventDispatch mechanism?
         * responds to user events.
         * The basics:

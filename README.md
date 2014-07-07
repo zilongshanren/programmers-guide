@@ -19,7 +19,7 @@ F.md - Appendix F - Win32 Installation and Setup
 
 1.md - Chapter 1 - About
 
-2.md - Chapter 2 - Directors and Caches
+2.md - Chapter 2 - Jumping into Cocos2d-x (We are building a simple game, no explanation)
 
-3.md - Chapter 3 - Nodes, Scenes and Layers
+3.md - Chapter 3 - Sprite and Nodes
 
