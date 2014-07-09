@@ -19,7 +19,7 @@ F.md - Appendix F - Win32 Installation and Setup
 
 G.md - Appendix G - WP8 Installation and Setup
 
-H.md - Appendix H - Creating a New Empty Project
+H.md - Appendix H - Creating a New Example Project
 
 1.md - Chapter 1 - About
 

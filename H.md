@@ -1,4 +1,4 @@
-# Appendix H: Creating a New Empty Project
+# Appendix H: Creating a New Example Project
 
 ## Prerequisite 
 * Completed one of the following Appendix A - G.
