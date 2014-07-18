@@ -16,6 +16,7 @@
 	          * For iOS and OSX development
 	          * For Linux development
 	          * For Windows and Windows Phone development 
+    * Why choose Cocos2d-x vs other game engines
     * Where to get help
            * [Official Forums](http://http://discuss.cocos2d-x.org)
             
@@ -129,12 +130,15 @@
     * Examples
 
 13. Advanced Topics
-    * Best Practice - Optimization, memory, performance, profiling
+    * Best Practice - optimization, memory, performance, profiling
     * Sound
     * SQLite
     * Subclass Cocos2d-x classes
     * Data structures (i.e Vector)
-    * Custom OpenGL (what to cover here? CustomCommand?)
+    * Custom OpenGL and Shaders (what to cover here? CustomCommand?)
     * c++11 usage
     * rendering pipeline (notes about this in the wiki)
     * networking - curl, http
+    * ccConfig.h (include and the defines that you can enable for debugging memory leaks, drawing, etc.)
+    * file system access
+    * resolution independence
