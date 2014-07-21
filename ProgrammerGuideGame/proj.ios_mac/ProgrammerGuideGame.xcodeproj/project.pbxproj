@@ -82,6 +82,16 @@
 		59A381A7197DD0AE009304E2 /* EnemySprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E80D7E1975C51E006BB5CC /* EnemySprite.cpp */; };
 		59A381A8197DD0B2009304E2 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E80D811975CAA7006BB5CC /* GameObject.cpp */; };
 		59A381A9197DD0B7009304E2 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 256E781C19745E3C00A5F331 /* MainScene.cpp */; };
+		59A381AA197DD390009304E2 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 254C8D821975AA290004A241 /* ball.png */; };
+		59A381AB197DD3DC009304E2 /* enemy.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 25D14E99197D9D3100F60256 /* enemy.pvr.ccz */; };
+		59A381AC197DD3DC009304E2 /* enemy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25D14E9A197D9D3100F60256 /* enemy.plist */; };
+		59A381AD197DD3DC009304E2 /* enemymove5.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D14E7B1976E0DA00F60256 /* enemymove5.png */; };
+		59A381AE197DD3DC009304E2 /* enemymove4.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D14E7C1976E0DA00F60256 /* enemymove4.png */; };
+		59A381AF197DD3DC009304E2 /* enemymove3.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D14E7D1976E0DA00F60256 /* enemymove3.png */; };
+		59A381B0197DD3DC009304E2 /* enemymove2.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D14E7E1976E0DA00F60256 /* enemymove2.png */; };
+		59A381B1197DD3DC009304E2 /* enemymove1.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D14E7F1976E0DA00F60256 /* enemymove1.png */; };
+		59A381B2197DD3DC009304E2 /* enemystand.png in Resources */ = {isa = PBXBuildFile; fileRef = 254C8D871975ADDE0004A241 /* enemystand.png */; };
+		59A381B3197DD3DC009304E2 /* enemyjump.png in Resources */ = {isa = PBXBuildFile; fileRef = 254C8D881975ADDE0004A241 /* enemyjump.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -873,6 +883,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59A381AB197DD3DC009304E2 /* enemy.pvr.ccz in Resources */,
+				59A381AC197DD3DC009304E2 /* enemy.plist in Resources */,
+				59A381AD197DD3DC009304E2 /* enemymove5.png in Resources */,
+				59A381AE197DD3DC009304E2 /* enemymove4.png in Resources */,
+				59A381AF197DD3DC009304E2 /* enemymove3.png in Resources */,
+				59A381B0197DD3DC009304E2 /* enemymove2.png in Resources */,
+				59A381B1197DD3DC009304E2 /* enemymove1.png in Resources */,
+				59A381B2197DD3DC009304E2 /* enemystand.png in Resources */,
+				59A381B3197DD3DC009304E2 /* enemyjump.png in Resources */,
+				59A381AA197DD390009304E2 /* ball.png in Resources */,
 				256E7824197470C800A5F331 /* start-button.png in Resources */,
 				256E782119746D3100A5F331 /* fonts in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
