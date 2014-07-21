@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>59E70DE3-C0DF-462F-848C-EC3D4C82CD9A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ProgrammerGuideGame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B0460E91-F66D-409B-8B30-2FF8D91B8156</key>
+		<string>https://github.com/cocos2d/cocos2d-x.git</string>
+		<key>C82A2E43-5967-4319-B146-9119C978D64C</key>
+		<string>ssh://github.com/chukong/programmers-guide.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ProgrammerGuideGame/proj.ios_mac/ProgrammerGuideGame.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B0460E91-F66D-409B-8B30-2FF8D91B8156</key>
+		<string>../../../../../cocos2d-x</string>
+		<key>C82A2E43-5967-4319-B146-9119C978D64C</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/chukong/programmers-guide.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C82A2E43-5967-4319-B146-9119C978D64C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B0460E91-F66D-409B-8B30-2FF8D91B8156</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cocos2d-x</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C82A2E43-5967-4319-B146-9119C978D64C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>programmers-guide</string>
+		</dict>
+	</array>
+</dict>
+</plist>
