@@ -37,7 +37,7 @@ void BallSprite::initOptions(cocos2d::Point _inPoint)
     setPosition(_inPoint);
     
     getPhysicsBody()->setCategoryBitmask(0x08);
-    getPhysicsBody()->setContactTestBitmask(UINT_MAX);
+    getPhysicsBody()->setContactTestBitmask(0x05);
     //getPhysicsBody()->setCollisionBitmask(0x06);
 }
 
@@ -82,27 +82,24 @@ bool BallSprite::onContactBegin(cocos2d::PhysicsContact& contact)
     PhysicsBody* a = contact.getShapeA()->getBody();
     PhysicsBody* b = contact.getShapeB()->getBody();
     
-    if (a->getCategoryBitmask() != b->getCategoryBitmask())
+    if (getPhysicsBody() == a && b->getCategoryBitmask() == 0x01) // edge node
     {
-        if (b->getCategoryBitmask() == 0x01) // edge node
-        {
-            std::cout << "Ball touched edge node" << std::endl;
-            removeFromParentAndCleanup(true);
-            
-        }
-        else if (b->getCategoryBitmask() == 0x04) // enemy
-        {
-            std::cout << "Ball touched enemy" << std::endl;
-            
-            //auto children = utils::findChildren(getParent(), getName());
-            //getParent()->removeChild(this);
-            
-            removeFromParentAndCleanup(true);
-        }
-        else
-        {
-            std::cout << "Ball touched something else" << std::endl;
-        }
+        std::cout << "Ball touched edge node" << std::endl;
+        removeFromParentAndCleanup(true);
+        
+    }
+    else if (getPhysicsBody() == a && b->getCategoryBitmask() == 0x04) // enemy
+    {
+        std::cout << "Ball touched enemy" << std::endl;
+        
+        //auto children = utils::findChildren(getParent(), getName());
+        //getParent()->removeChild(this);
+        
+        removeFromParentAndCleanup(true);
+    }
+    else
+    {
+        std::cout << "Ball touched something else" << std::endl;
     }
     
     return true;

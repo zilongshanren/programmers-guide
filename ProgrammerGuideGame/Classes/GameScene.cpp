@@ -16,6 +16,9 @@ Scene* GameScene::createScene()
     Size visibleSize = Director::getInstance()->getVisibleSize();
     
     auto body = PhysicsBody::createEdgeBox(visibleSize, PHYSICSBODY_MATERIAL_DEFAULT, 3);
+    body->setContactTestBitmask(UINT_MAX);
+    body->setCategoryBitmask(0x01);
+    
     auto edgeNode = Node::create();
     edgeNode->setPosition(Point(visibleSize.width/2,visibleSize.height/2));
 	edgeNode->setPhysicsBody(body);
