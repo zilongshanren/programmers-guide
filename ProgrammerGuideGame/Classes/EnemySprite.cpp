@@ -37,7 +37,7 @@ void EnemySprite::initOptions()
     Vect velocity((CCRANDOM_0_1() - 0.5)*300, (CCRANDOM_0_1() - 0.5)*300);
     getPhysicsBody()->setVelocity(velocity);
     getPhysicsBody()->setCategoryBitmask(0x04);    // 0100
-    getPhysicsBody()->setContactTestBitmask(UINT_MAX);
+    getPhysicsBody()->setContactTestBitmask(0x08);
     //getPhysicsBody()->setCollisionBitmask(0x06);   // 0110
 
     setPosition(200, 0 + getContentSize().height/2); // hardcoded for now
@@ -73,7 +73,11 @@ bool EnemySprite::onContactBegin(cocos2d::PhysicsContact& contact)
     PhysicsBody* a = contact.getShapeA()->getBody();
     PhysicsBody* b = contact.getShapeB()->getBody();
     
-    if (a->getCategoryBitmask() != b->getCategoryBitmask())
+    if (getPhysicsBody() == b && a->getCategoryBitmask() == 0x08)
+    {
+        removeFromParentAndCleanup(true);
+    }
+    else if (getPhysicsBody() == a && b->getCategoryBitmask() == 0x08)
     {
         removeFromParentAndCleanup(true);
     }
