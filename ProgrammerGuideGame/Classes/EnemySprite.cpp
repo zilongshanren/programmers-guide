@@ -36,24 +36,24 @@ void EnemySprite::initOptions()
     
     Vect velocity((CCRANDOM_0_1() - 0.5)*300, (CCRANDOM_0_1() - 0.5)*300);
     getPhysicsBody()->setVelocity(velocity);
-    getPhysicsBody()->setCategoryBitmask(0x04);    // 0100
+    getPhysicsBody()->setCategoryBitmask(0x04);
     getPhysicsBody()->setContactTestBitmask(0x08);
-    //getPhysicsBody()->setCollisionBitmask(0x06);   // 0110
 
     setPosition(200, 0 + getContentSize().height/2); // hardcoded for now
     //animate it
-    cocos2d::Animation* anim1 = cocos2d::Animation::create();
-    anim1->addSpriteFrameWithFile("enemystand.png");
-    anim1->addSpriteFrameWithFile("enemymove1.png");
-    anim1->addSpriteFrameWithFile("enemymove2.png");
-    anim1->addSpriteFrameWithFile("enemymove3.png");
-    anim1->addSpriteFrameWithFile("enemymove4.png");
-    anim1->addSpriteFrameWithFile("enemymove5.png");
-    anim1->addSpriteFrameWithFile("enemyjump.png");
-  
-    cocos2d::Animate* animation = cocos2d::Animate::create(anim1);
-    animation->setDuration(0.2f);
-    runAction(cocos2d::RepeatForever::create(animation));
+    cocos2d::Vector<cocos2d::SpriteFrame*> animFrames;
+    animFrames.reserve(7);
+    animFrames.pushBack(cocos2d::SpriteFrame::create("enemystand.png", cocos2d::Rect(0,0, 131,162)));
+    animFrames.pushBack(cocos2d::SpriteFrame::create("enemymove1.png", cocos2d::Rect(0,0, 131,162)));
+    animFrames.pushBack(cocos2d::SpriteFrame::create("enemymove2.png", cocos2d::Rect(0,0, 131,162)));
+    animFrames.pushBack(cocos2d::SpriteFrame::create("enemymove3.png", cocos2d::Rect(0,0, 131,162)));
+    animFrames.pushBack(cocos2d::SpriteFrame::create("enemymove4.png", cocos2d::Rect(0,0, 131,162)));
+    animFrames.pushBack(cocos2d::SpriteFrame::create("enemymove5.png", cocos2d::Rect(0,0, 131,162)));
+    animFrames.pushBack(cocos2d::SpriteFrame::create("enemyjump.png", cocos2d::Rect(0,0, 131,162)));
+    
+    cocos2d::Animation* animation = cocos2d::Animation::createWithSpriteFrames(animFrames, 0.1f);
+    cocos2d::Animate* animate = cocos2d::Animate::create(animation);
+    runAction(cocos2d::RepeatForever::create(animate));
     
     // move it
     cocos2d::MoveBy* act1 = cocos2d::MoveBy::create(1, cocos2d::Point(10, 0));
@@ -73,7 +73,7 @@ bool EnemySprite::onContactBegin(cocos2d::PhysicsContact& contact)
     PhysicsBody* a = contact.getShapeA()->getBody();
     PhysicsBody* b = contact.getShapeB()->getBody();
     
-    if (getPhysicsBody() == b && a->getCategoryBitmask() == 0x08)
+    if (getPhysicsBody() == b && a->getCategoryBitmask() == 0x08) // ball
     {
         removeFromParentAndCleanup(true);
     }

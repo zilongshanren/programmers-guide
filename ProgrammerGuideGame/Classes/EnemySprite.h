@@ -16,10 +16,7 @@ class EnemySprite : public cocos2d::Sprite
         void initOptions();
         void addEvents();
     
-        bool onContactBegin(cocos2d::PhysicsContact& contact);
-    
-    private:
-        
+        bool onContactBegin(cocos2d::PhysicsContact& contact);    
 };
 
 #endif // _ENEMYSPRITE_H_

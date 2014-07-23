@@ -30,12 +30,16 @@ public:
     
     inline bool getAddEnemy() { return addEnemy; };
     inline void setAddEnemy(bool b) { addEnemy = b; };
+    
+    inline cocos2d::Label* getScoreLabel() { return scoreLabel; };
+    inline void setScoreLabel() { scoreLabel->setString(std::to_string(score)); };
         
 private:
     cocos2d::PhysicsWorld* m_world;
     cocos2d::Layer* layer;
-    std::vector<std::thread> vTimers;
     
+    int score = 0;
+    cocos2d::Label* scoreLabel;
     bool addEnemy = false;
     
 };

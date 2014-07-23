@@ -11,7 +11,7 @@ USING_NS_CC;
 Scene* GameScene::createScene()
 {
     auto scene = Scene::createWithPhysics();
-    scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+    //scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
     
@@ -40,9 +40,14 @@ bool GameScene::init()
         return false;
     }
     
-    Size visibleSize = Director::getInstance()->getVisibleSize();
     Point origin = Director::getInstance()->getVisibleOrigin();
 
+    // score
+    scoreLabel = cocos2d::Label::createWithTTF("0", "fonts/Marker Felt.ttf", 32);
+    addChild(scoreLabel);
+    scoreLabel->setPosition(cocos2d::Point(getContentSize().width - 50, getContentSize().height - 50));
+    
+    // event listener
     auto touchListener = EventListenerTouchOneByOne::create();
     touchListener->onTouchBegan = CC_CALLBACK_2(GameScene::onTouchBegan, this);
     touchListener->onTouchEnded = CC_CALLBACK_2(GameScene::onTouchEnded, this);
@@ -75,11 +80,7 @@ void GameScene::update(float dt)
         EnemySprite* e = EnemySprite::createSprite();
         this->addChild(e);
         
-        _gameObject->Instance()->getEnemies().push_back(e);
-        
         setAddEnemy(false);
-        
-        //std::cout << "ememy added - # enemies now: " << _gameObject->Instance()->getEnemies().size() << std::endl;
     }
 }
 

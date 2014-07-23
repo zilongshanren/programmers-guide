@@ -21,9 +21,6 @@ class  GameObject
         MainScene* getMainSceneObject() { return mainScene; };
         cocos2d::Scene* getGameSceneObject() { return gameScene; };
 
-        inline std::vector<EnemySprite*>& getEnemies() { return _enemies; };
-        inline const std::vector<EnemySprite*>& getEnemies() const { return _enemies; }
-    
     private:
         GameObject();
         GameObject(const GameObject&);
@@ -32,8 +29,6 @@ class  GameObject
     
         MainScene* mainScene;
         cocos2d::Scene* gameScene;
-    
-        std::vector<EnemySprite*> _enemies;
 };
 
 #endif // _GAMEOBJECT_H_

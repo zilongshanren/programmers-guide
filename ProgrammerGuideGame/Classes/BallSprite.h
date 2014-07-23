@@ -15,12 +15,8 @@ class BallSprite : public cocos2d::Sprite
     
         void initOptions(cocos2d::Point _inPoint);
         void addEvents();
-        void touchEvent(cocos2d::Touch* touch);
     
         bool onContactBegin(cocos2d::PhysicsContact& contact);
-            
-    private:
-        
 };
 
 #endif // _BALLSPRITE_H_

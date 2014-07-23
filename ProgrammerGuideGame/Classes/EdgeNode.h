@@ -14,10 +14,6 @@ class EdgeNode : public cocos2d::Node
         static EdgeNode* createNode(cocos2d::Size visibleSize);
     
         void initOptions(cocos2d::Size visibleSize);
-        void addEvents();
-    
-        bool onContactBegin(cocos2d::PhysicsContact& contact);
-    
     
     private:
         cocos2d::PhysicsBody* body;

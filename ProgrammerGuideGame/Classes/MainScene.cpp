@@ -15,10 +15,10 @@ MainScene::MainScene()
     scene = cocos2d::Scene::createWithSize(visibleSize);
     
     // layer
-    auto layer = cocos2d::LayerColor::create(cocos2d::Color4B(120, 50, 50, 120), visibleSize.width, visibleSize.height);
+    auto layer = cocos2d::LayerColor::create(cocos2d::Color4B(102, 102, 102, 102), visibleSize.width, visibleSize.height);
     
     // game title
-    cocos2d::Label* title = cocos2d::Label::createWithTTF("My Game", "fonts/Marker Felt.ttf", 32);
+    cocos2d::Label* title = cocos2d::Label::createWithTTF("Alien Attack!", "fonts/Marker Felt.ttf", 32);
     layer->addChild(title);
     title->setPosition(layer->getContentSize().width / 2, layer->getContentSize().height - 100); // move it down
     
