@@ -15,7 +15,7 @@ public:
     // implement the "static create()" method manually
     CREATE_FUNC(GameScene);
     
-    void setPhyWorld(cocos2d::PhysicsWorld* world){m_world = world;}
+    inline void setPhyWorld(cocos2d::PhysicsWorld* world){ m_world = world; };
     
     cocos2d::Layer* getLayer() { return layer; };
     

@@ -6,25 +6,27 @@
 
 extern GameObject* _gameObject;
 
-USING_NS_CC;
-
-Scene* GameScene::createScene()
+cocos2d::Scene* GameScene::createScene()
 {
-    auto scene = Scene::createWithPhysics();
+    // create a scene with Physics
+    cocos2d::Scene* scene = cocos2d::Scene::createWithPhysics();
+    
+    // uncomment to show debug mask around all bodies
     //scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
     
-    Size visibleSize = Director::getInstance()->getVisibleSize();
+    cocos2d::Size visibleSize = cocos2d::Director::getInstance()->getVisibleSize();
     
-    auto body = PhysicsBody::createEdgeBox(visibleSize, PHYSICSBODY_MATERIAL_DEFAULT, 3);
+    // create the Physics body we will use
+    cocos2d::PhysicsBody* body = cocos2d::PhysicsBody::createEdgeBox(visibleSize, cocos2d::PHYSICSBODY_MATERIAL_DEFAULT, 3);
     body->setContactTestBitmask(UINT_MAX);
     body->setCategoryBitmask(0x01);
     
-    auto edgeNode = Node::create();
-    edgeNode->setPosition(Point(visibleSize.width/2,visibleSize.height/2));
+    cocos2d::Node* edgeNode = cocos2d::Node::create();
+    edgeNode->setPosition(cocos2d::Point((visibleSize.width / 2),(visibleSize.height / 2)));
 	edgeNode->setPhysicsBody(body);
 	scene->addChild(edgeNode);
     
-    auto layer = GameScene::create();
+    GameScene* layer = GameScene::create();
     layer->setPhyWorld(scene->getPhysicsWorld());
     layer->scheduleUpdate();
     layer->schedule(schedule_selector(GameScene::addEnemyToLayer), 10);
@@ -40,7 +42,7 @@ bool GameScene::init()
         return false;
     }
     
-    Point origin = Director::getInstance()->getVisibleOrigin();
+    cocos2d::Point origin = cocos2d::Director::getInstance()->getVisibleOrigin();
 
     // score
     scoreLabel = cocos2d::Label::createWithTTF("0", "fonts/Marker Felt.ttf", 32);
@@ -48,7 +50,7 @@ bool GameScene::init()
     scoreLabel->setPosition(cocos2d::Point(getContentSize().width - 50, getContentSize().height - 50));
     
     // event listener
-    auto touchListener = EventListenerTouchOneByOne::create();
+    cocos2d::EventListenerTouchOneByOne* touchListener = cocos2d::EventListenerTouchOneByOne::create();
     touchListener->onTouchBegan = CC_CALLBACK_2(GameScene::onTouchBegan, this);
     touchListener->onTouchEnded = CC_CALLBACK_2(GameScene::onTouchEnded, this);
     _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
@@ -56,18 +58,18 @@ bool GameScene::init()
     return true;
 }
 
-bool GameScene::onTouchBegan(Touch *touch, Event *unused_event)
+bool GameScene::onTouchBegan(cocos2d::Touch* touch, cocos2d::Event*unused_event)
 {
     return true;
 }
 
-void GameScene::onTouchEnded(Touch *touch, Event *unused_event)
+void GameScene::onTouchEnded(cocos2d::Touch* touch, cocos2d::Event*unused_event)
 {
-    auto location = touch->getLocation();
+    cocos2d::Point location = touch->getLocation();
     addNewSpriteAtPosition(location);
 }
 
-void GameScene::addNewSpriteAtPosition(Point p)
+void GameScene::addNewSpriteAtPosition(cocos2d::Point p)
 {
     BallSprite* sprite = BallSprite::createSprite(p);
 	this->addChild(sprite);

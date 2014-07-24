@@ -29,9 +29,10 @@ BallSprite* BallSprite::createSprite(cocos2d::Point _inPoint)
 void BallSprite::initOptions(cocos2d::Point _inPoint)
 {
     setTag((CCRANDOM_0_1() - 0.5)*300);
-    setName(std::to_string(getTag()));
+
     cocos2d::PhysicsBody* body = cocos2d::PhysicsBody::createCircle(getContentSize().width / 2);
     body->setTag(getTag());
+    
     setPhysicsBody(body);
     setPosition(_inPoint);
     

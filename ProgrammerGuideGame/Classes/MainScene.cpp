@@ -15,7 +15,7 @@ MainScene::MainScene()
     scene = cocos2d::Scene::createWithSize(visibleSize);
     
     // layer
-    auto layer = cocos2d::LayerColor::create(cocos2d::Color4B(102, 102, 102, 102), visibleSize.width, visibleSize.height);
+    cocos2d::Layer* layer = cocos2d::LayerColor::create(cocos2d::Color4B(102, 102, 102, 102), visibleSize.width, visibleSize.height);
     
     // game title
     cocos2d::Label* title = cocos2d::Label::createWithTTF("Alien Attack!", "fonts/Marker Felt.ttf", 32);

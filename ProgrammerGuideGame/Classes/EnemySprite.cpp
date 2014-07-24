@@ -30,7 +30,7 @@ void EnemySprite::initOptions()
 {
     setTag((CCRANDOM_0_1() - 0.5)*300);
     
-    auto body = cocos2d::PhysicsBody::createBox(cocos2d::Size(getContentSize().width, getContentSize().height));
+    cocos2d::PhysicsBody* body = cocos2d::PhysicsBody::createBox(cocos2d::Size(getContentSize().width, getContentSize().height));
     body->setTag(getTag());
     setPhysicsBody(body);
     
@@ -40,6 +40,7 @@ void EnemySprite::initOptions()
     getPhysicsBody()->setContactTestBitmask(0x08);
 
     setPosition(200, 0 + getContentSize().height/2); // hardcoded for now
+    
     //animate it
     cocos2d::Vector<cocos2d::SpriteFrame*> animFrames;
     animFrames.reserve(7);
@@ -63,7 +64,6 @@ void EnemySprite::initOptions()
 void EnemySprite::addEvents()
 {
     auto contactListener = EventListenerPhysicsContact::create();
-    
     contactListener->onContactBegin = std::bind(&EnemySprite::onContactBegin, this, std::placeholders::_1);
     cocos2d::Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener, this);
 }
