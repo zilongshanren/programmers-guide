@@ -37,7 +37,6 @@
 		25D14E831976E0DA00F60256 /* enemymove2.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D14E7E1976E0DA00F60256 /* enemymove2.png */; };
 		25D14E841976E0DA00F60256 /* enemymove1.png in Resources */ = {isa = PBXBuildFile; fileRef = 25D14E7F1976E0DA00F60256 /* enemymove1.png */; };
 		25D14E931979CE2900F60256 /* BallSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25D14E921979CE2900F60256 /* BallSprite.cpp */; };
-		25D14E981979E0A400F60256 /* EdgeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25D14E971979E0A400F60256 /* EdgeNode.cpp */; };
 		25D14E9B197D9D3100F60256 /* enemy.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 25D14E99197D9D3100F60256 /* enemy.pvr.ccz */; };
 		25D14E9C197D9D3100F60256 /* enemy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25D14E9A197D9D3100F60256 /* enemy.plist */; };
 		25E80D7F1975C51E006BB5CC /* EnemySprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E80D7E1975C51E006BB5CC /* EnemySprite.cpp */; };
@@ -78,7 +77,6 @@
 		50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A017ECD613001EB2F8 /* Icon-29.png */; };
 		50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
 		59A38185197DD0A1009304E2 /* BallSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25D14E921979CE2900F60256 /* BallSprite.cpp */; };
-		59A381A6197DD0AB009304E2 /* EdgeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25D14E971979E0A400F60256 /* EdgeNode.cpp */; };
 		59A381A7197DD0AE009304E2 /* EnemySprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E80D7E1975C51E006BB5CC /* EnemySprite.cpp */; };
 		59A381A8197DD0B2009304E2 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25E80D811975CAA7006BB5CC /* GameObject.cpp */; };
 		59A381A9197DD0B7009304E2 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 256E781C19745E3C00A5F331 /* MainScene.cpp */; };
@@ -339,8 +337,6 @@
 		25D14E7F1976E0DA00F60256 /* enemymove1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemymove1.png; sourceTree = "<group>"; };
 		25D14E911979CE2900F60256 /* BallSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BallSprite.h; path = ../Classes/BallSprite.h; sourceTree = "<group>"; };
 		25D14E921979CE2900F60256 /* BallSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BallSprite.cpp; path = ../Classes/BallSprite.cpp; sourceTree = "<group>"; };
-		25D14E961979E0A400F60256 /* EdgeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EdgeNode.h; path = ../Classes/EdgeNode.h; sourceTree = "<group>"; };
-		25D14E971979E0A400F60256 /* EdgeNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EdgeNode.cpp; path = ../Classes/EdgeNode.cpp; sourceTree = "<group>"; };
 		25D14E99197D9D3100F60256 /* enemy.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = enemy.pvr.ccz; sourceTree = "<group>"; };
 		25D14E9A197D9D3100F60256 /* enemy.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = enemy.plist; sourceTree = "<group>"; };
 		25E80D7D1975C51E006BB5CC /* EnemySprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnemySprite.h; path = ../Classes/EnemySprite.h; sourceTree = "<group>"; };
@@ -460,8 +456,6 @@
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				25D14E911979CE2900F60256 /* BallSprite.h */,
 				25D14E921979CE2900F60256 /* BallSprite.cpp */,
-				25D14E961979E0A400F60256 /* EdgeNode.h */,
-				25D14E971979E0A400F60256 /* EdgeNode.cpp */,
 				25E80D7D1975C51E006BB5CC /* EnemySprite.h */,
 				25E80D7E1975C51E006BB5CC /* EnemySprite.cpp */,
 				25E80D801975CAA7006BB5CC /* GameObject.h */,
@@ -909,7 +903,6 @@
 			files = (
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				25D14E931979CE2900F60256 /* BallSprite.cpp in Sources */,
-				25D14E981979E0A400F60256 /* EdgeNode.cpp in Sources */,
 				25E80D821975CAA7006BB5CC /* GameObject.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
@@ -928,7 +921,6 @@
 				59A381A9197DD0B7009304E2 /* MainScene.cpp in Sources */,
 				59A38185197DD0A1009304E2 /* BallSprite.cpp in Sources */,
 				256E782819747E1000A5F331 /* GameScene.cpp in Sources */,
-				59A381A6197DD0AB009304E2 /* EdgeNode.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				59A381A7197DD0AE009304E2 /* EnemySprite.cpp in Sources */,
 				59A381A8197DD0B2009304E2 /* GameObject.cpp in Sources */,

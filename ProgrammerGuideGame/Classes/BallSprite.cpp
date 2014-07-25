@@ -10,7 +10,7 @@ BallSprite::BallSprite() {}
 
 BallSprite::~BallSprite() {}
 
-BallSprite* BallSprite::createSprite(cocos2d::Point _inPoint)
+BallSprite* BallSprite::createSprite(const cocos2d::Point& _inPoint)
 {
     BallSprite *sprite = new (std::nothrow) BallSprite();
     
@@ -26,7 +26,7 @@ BallSprite* BallSprite::createSprite(cocos2d::Point _inPoint)
     return nullptr;
 }
 
-void BallSprite::initOptions(cocos2d::Point _inPoint)
+void BallSprite::initOptions(const cocos2d::Point& _inPoint)
 {
     setTag((CCRANDOM_0_1() - 0.5)*300);
 

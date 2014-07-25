@@ -22,7 +22,7 @@ public:
     virtual bool onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *unused_event);
     virtual void onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *unused_event);
     
-    void addNewSpriteAtPosition(cocos2d::Point p);
+    void addNewSpriteAtPosition(const cocos2d::Point& p);
     
     void update(float dt);
     

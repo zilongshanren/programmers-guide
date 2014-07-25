@@ -42,8 +42,6 @@ bool GameScene::init()
         return false;
     }
     
-    cocos2d::Point origin = cocos2d::Director::getInstance()->getVisibleOrigin();
-
     // score
     scoreLabel = cocos2d::Label::createWithTTF("0", "fonts/Marker Felt.ttf", 32);
     addChild(scoreLabel);
@@ -69,7 +67,7 @@ void GameScene::onTouchEnded(cocos2d::Touch* touch, cocos2d::Event*unused_event)
     addNewSpriteAtPosition(location);
 }
 
-void GameScene::addNewSpriteAtPosition(cocos2d::Point p)
+void GameScene::addNewSpriteAtPosition(const cocos2d::Point& p)
 {
     BallSprite* sprite = BallSprite::createSprite(p);
 	this->addChild(sprite);

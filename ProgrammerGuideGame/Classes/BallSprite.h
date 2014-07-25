@@ -11,9 +11,9 @@ class BallSprite : public cocos2d::Sprite
         BallSprite();
         ~BallSprite();
     
-        static BallSprite* createSprite(cocos2d::Point _inPoint);
+        static BallSprite* createSprite(const cocos2d::Point& _inPoint);
     
-        void initOptions(cocos2d::Point _inPoint);
+        void initOptions(const cocos2d::Point& _inPoint);
         void addEvents();
     
         bool onContactBegin(cocos2d::PhysicsContact& contact);
