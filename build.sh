@@ -8,6 +8,6 @@ echo "run: sudo tlmgr install ec ecc -- to install missing fonts"
 echo ""
 echo "To Do: Be able to insert a page break at the end of each chapter. right now it is continuous"
 
-pandoc outline.md -s -o outline.pdf
+pandoc -markdown_github -s -o outline.pdf outline.md
 
-pandoc 1.md 2.md 3.md 4.md 5.md 6.md 7.md 8.md 9.md 10.md 11.md 12.md 13.md A.md B.md C.md D.md E.md F.md G.md H.md -s -o manual.pdf
+pandoc -markdown_github -s -o manual.pdf 1.md 2.md 3.md 4.md 5.md 6.md 7.md 8.md 9.md 10.md 11.md 12.md 13.md A.md B.md C.md D.md E.md F.md G.md H.md
