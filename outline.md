@@ -9,21 +9,25 @@
         * Versioning information (i.e C++, JS, Lua, not related to Cocos2d-iphone, etc)
          * cocos2d-x comes in a variety of flavors
              * c++[c++](http://www.cocos2d-x.org/products#cocos2dx)
-		      * Lua[Lua](http://www.cocos2d-x.org/products#cocos2dx-lua)
+		     * Lua[Lua](http://www.cocos2d-x.org/products#cocos2dx-lua)
     *  Prerequisites
-	       * Operating systems and tools supported
+	      * Operating systems and tools supported
 	          * For Android development
 	          * For iOS and OSX development
 	          * For Linux development
 	          * For Windows and Windows Phone development 
     * Why choose Cocos2d-x vs other game engines
     * Where to get help
-           * [Official Forums](http://http://discuss.cocos2d-x.org)
+         * [Official Forums](http://http://discuss.cocos2d-x.org)
             
 2. Jumping into Cocos2d-x (We are building a simple game, no explanation)
     * Installation - See appropriate Appendix
-    * Getting Started    * Creating Your First Scene    * Adding Content to the Scene    * Using Actions to Animate Scenes
-    * Transitioning Between Scenes    * Building Complex Content Using Nodes
+    * Getting Started
+    * Creating Your First Scene
+    * Adding Content to the Scene
+    * Using Actions to Animate Scenes
+    * Transitioning Between Scenes
+    * Building Complex Content Using Nodes
     * Creating Nodes That Interact with Each Other
 
 3. Sprite and Nodes
@@ -105,7 +109,9 @@
          * `EventListenerCustom` - responds to custom events   
              * describe what to override.
      * Registering event with the dispatcher
-     * Removing events from the dispatcher9. 3D
+     * Removing events from the dispatcher
+
+9. 3D
     * 3D Sprite
     * 3D Actions
     * 3D Animations
