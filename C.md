@@ -1,18 +1,26 @@
-# Appendix C: iOS Installation and Setup
+# Appendix C: Android (Eclipse) Installation and Setup
 
-## Environment Requirements
-* Mac OS X 10.8+
-* Cocos2d-x v3.0 ([HERE](http://cocos2d-x.org/download))
-* Xcode 4.6.2+ ([Apple Developer Website](https://developer.apple.com/downloads/index.action))
-* iOS 5.0+
+## Prerequisite
+* Complete steps in Appendix A
 
-## Prerequisite 
-* Download cocos2d-x and unzip it. (maybe: ~/) 
+## Open the proj.android project with Eclipse.
 
-## Build and Run
-* Enter `cocos2d-x/build` and open `cocos2d_tests.xcodeproj`
-* Choose `cpp-tests iOS` from targets drop-down box  
-* Click `run` to compile and run `cpp-tests`
-  
-## Running on an IOS Device
-* In order to run on IOS Device an [IOS Developer Program](https://developer.apple.com/programs/ios/) membership is needed. The steps to run on iOS device are the same except you select you device from the device list.
+* Launch Eclipse
+
+* Right click your mouse at the empty area of the `Package Explorer` and choose `Import...`. 
+
+* Choose `Existing Android Code Into Workspace` from the pop up dialog and Click `Next`.
+
+* Click the `Browse...` button to choose the directory of Cpp-Tests' `proj.android`. and Click Ok.
+
+* Click Finish.
+
+## Import Libcocos2dx Project
+* Same steps as above only using the path of the libcocos2dx project is `[your own game project folder]/cocos/2d/platform/android/java`. 
+
+## Build and Run the Android Project
+* Connect your Android phone with `USB remote debugging` option enabled.
+
+* Make sure your computer can recognize your phone (you might need to install drivers for your specific phone)
+
+* Right click on the project and choose `Run as...` -> `Android Application`.

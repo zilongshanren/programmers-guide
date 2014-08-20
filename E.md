@@ -1,55 +1,15 @@
-# Appendix E: Linux Installation and Setup
+# Appendix E: Mac OSX Installation and Setup
 
-## Environment Requirements 
-* Ubuntu 12.10+
+## Environment Requirements
+* Mac OS X 10.8+
 * Cocos2d-x v3.0 ([HERE](http://cocos2d-x.org/download))
-* CMake 2.6+
+* Xcode 4.6.2+ ([Apple Developer Website](https://developer.apple.com/downloads/index.action))
+* iOS 5.0+
 
 ## Prerequisite 
-* Download [cocos2d-x](http://cocos2d-x.org/download) and unzip it. (maybe: ~/) 
+* Download cocos2d-x and unzip it. (maybe: ~/) 
 
-* Install dependencies. The dependencies are:
-
-		libx11-dev
-		libxmu-dev
-		libglu1-mesa-dev
-		libgl2ps-dev
-		libxi-dev
-		g++
-		libzip-dev
-		libpng12-dev
-		libcurl4-gnutls-dev
-		libfontconfig1-dev
-		libsqlite3-dev
-		libglew*-dev
-		libssl-dev
-
-If you are using Ubuntu/Debian, there is a shell script **build/install-deps-linux.sh** for you to install the dependences easily. Run commands below in terminal:  
-
-    	$ cd $cocos2dx_root/build
-    	$ ./install-deps-linux.sh
-
-Otherwise, you should install the dependencies manually.
-
-## Generate Makefile
-
-Run `cmake` to generate `makefile`:
-
-    	$ mkdir linux-build
-    	$ cd linux-build
-    	$ cmake ../..
-
-When `cmake` returns correctly, many files & folders will be generated in  `coocs2dx_root/build/linux-build`
-	
-## Compile
-
-	Run `make` to compile:
-
-    	$ make
-
-	Application will be generated in `cocos2dx_root/build/linux-build/bin/cpp-tests/` if compiled successfully.
-
-## Run
-
-		$ cd bin/cpp-tests/
-		$ ./cpp-tests
+## Build and Run
+* Enter `cocos2d-x/build` and open `cocos2d_tests.xcodeproj`
+* Choose `cpp-tests Mac` from targets drop-down box  
+* Click `run` to compile and run `cpp-tests`
