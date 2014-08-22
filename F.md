@@ -1,15 +1,55 @@
-# Appendix F: Win32 Installation and Setup
+# Appendix F: Linux Installation and Setup
 
-## Environmental Requirements
-* Windows 7+
+## Environment Requirements 
+* Ubuntu 12.10+
 * Cocos2d-x v3.0 ([HERE](http://cocos2d-x.org/download))
-* Visual Studio 2012+
-* Dependencies: Python 2.7
+* CMake 2.6+
 
 ## Prerequisite 
 * Download [cocos2d-x](http://cocos2d-x.org/download) and unzip it. (maybe: ~/) 
 
-## Compile and Run the TestCpp Project
-* Open "cocos2d-win32.vc2012.sln" in the "build" folder
+* Install dependencies. The dependencies are:
 
-* Right click the "TestCpp" project, and select "Set as StartUp Project". Compile and run the "TestCpp" project.
+		libx11-dev
+		libxmu-dev
+		libglu1-mesa-dev
+		libgl2ps-dev
+		libxi-dev
+		g++
+		libzip-dev
+		libpng12-dev
+		libcurl4-gnutls-dev
+		libfontconfig1-dev
+		libsqlite3-dev
+		libglew*-dev
+		libssl-dev
+
+If you are using Ubuntu/Debian, there is a shell script **build/install-deps-linux.sh** for you to install the dependences easily. Run commands below in terminal:  
+
+    	$ cd $cocos2dx_root/build
+    	$ ./install-deps-linux.sh
+
+Otherwise, you should install the dependencies manually.
+
+## Generate Makefile
+
+Run `cmake` to generate `makefile`:
+
+    	$ mkdir linux-build
+    	$ cd linux-build
+    	$ cmake ../..
+
+When `cmake` returns correctly, many files & folders will be generated in  `coocs2dx_root/build/linux-build`
+	
+## Compile
+
+	Run `make` to compile:
+
+    	$ make
+
+	Application will be generated in `cocos2dx_root/build/linux-build/bin/cpp-tests/` if compiled successfully.
+
+## Run
+
+		$ cd bin/cpp-tests/
+		$ ./cpp-tests

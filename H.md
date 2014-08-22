@@ -1,33 +1,20 @@
-# Appendix H: Creating a New Example Project
+# Appendix H: WP8 Installation and Setup
+
+## Environmental Requirements
+* Windows 8.0/8.1
+* Cocos2d-x v3.0 ([HERE](http://cocos2d-x.org/download))
+* Visual Studio 2012+
+* Windows Phone SDK 8.0 ([HERE](http://dev.windowsphone.com/en-US/downloadsdk))
 
 ## Prerequisite 
-* Completed one of the following Appendix A - G.
+* Download [cocos2d-x](http://cocos2d-x.org/download) and unzip it. (maybe: ~/) 
+* register to be a Windows Phone Developer ([HERE](http://msdn.microsoft.com/en-us/library/windowsphone/help/jj206719(v=vs.105))
 
-## Create A New Project
-	
-### OS X and Linux users.
+## Compile and Run the TestCpp Project
+* Open "cocos2d-win32.vc2012.sln" in the "build" folder 
+* Right click the "cpp-tests" project, and select "Set as StartUp Project". Select "Emulator" or a "Device" to run the project on. If you sect "Device" you need to connect your phone device using usb. Compile and run the TestCpp project.
 
-		$ cd cocos2d-x
-		$ ./setup.py
-		$ source ~/.bash_profile 
-		$ cocos new MyGame -p com.MyCompany.MyGame -l cpp -d ~/MyCompany
+## How to debug in project
+* Right click "cpp-tests", select "Properties", in "Debug", select debug target.
 
-* `MyGame`: name of your project 
-* `-p com.MyCompany.MyGame`: package name for android
-* `-l cpp`: programming language used for the project, valid value is `cpp`and `lua`
-* `-d ~/MyCompany`: directory to hold your project
-
-		$ cocos run -s ~/MyCompany/MyGame -p ios
-    
-* `-s`: directory of the new project. This could be an absolute path or a relative path.
-* `-p`: which platform to run on. Options are `ios`,`android`,`win32`,`mac` and `linux`.
-
-(Note: You are a tmux user, you should add `reattach-to-user-namespace` before the command `cocos`. For more information, please refer to [this link](https://github.com/phonegap/ios-sim) for more information.)
-
-You can run `cocos run --help` for more detail information.
-
-### Win32 Users
-using `cmd` as your shell: ` cd cocos2d-x-3.1.1\tools\cocos2d-console\bin` or to wherever you have this on your filesystem
-
-		`cocos.py new YourGameTitle -p com.yourcompany.gametitle -l cpp -d C:\YourGameTitle`
-
+* If you select "Managed Only" in "UI Task", it's to debug c# code in "cpp-tests". If you select "Native Only", it's to debug c++ code in "cpp-testsComponent". If you select "Native Only" and want to use "CCLog" function, right click "cpp-testsComponent" and define "COCOS2D_DEBUG=1" in "Preprocessor Definitions"
