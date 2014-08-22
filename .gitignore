@@ -5,6 +5,8 @@ ProgrammerGuideGame/cocos2d
 .DS_Store
 .AppleDouble
 .LSOverride
+ProgrammerGuideGame/proj.ios_mac/ProgrammerGuideGame.xcodeproj/project.xcworkspace
+ProgrammerGuideGame/proj.ios_mac/ProgrammerGuideGame.xcodeproj/xcuserdata
 
 # Icon must end with two \r
 Icon
