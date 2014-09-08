@@ -19,8 +19,10 @@
     * Why choose Cocos2d-x vs other game engines
     * Where to get help
          * [Official Forums](http://http://discuss.cocos2d-x.org)
-            
-2. Jumping into Cocos2d-x (We are building a simple game, no explanation)
+ 
+2. Basic Copncepts
+ 
+3. Jumping into Cocos2d-x (We are building a simple game, no explanation)
     * Installation - See appropriate Appendix
     * Getting Started
     * Creating Your First Scene
@@ -30,7 +32,7 @@
     * Building Complex Content Using Nodes
     * Creating Nodes That Interact with Each Other
 
-3. Sprite and Nodes
+4. Sprite and Nodes
     * What are Sprites
     * Creating Sprites     
         * Creating a Textured Sprite
@@ -43,7 +45,7 @@
         * Anchor Point and Position    
     * SpriteSheets
     
-4. Actions To Nodes
+5. Actions To Nodes
     * What are Basic Actions
         * Animate
         * Fade In/Out
@@ -57,7 +59,7 @@
         * Reverse    
     * Running Actions and Sequences
 
-5. Building and Transitioning Scenes
+6. Building and Transitioning Scenes
     * What is a Scene?
     * Creating a Scene
         * Creating a Node Tree
@@ -66,7 +68,7 @@
         * Converting between coordinate systems
     * Transitioning between Scenes
 
-6. UI
+7. UI
     * Labels
          * BMFont
          * TTF
@@ -84,13 +86,13 @@
     * Scroll
     * Layout
     
-7. Other Node Types
+8. Other Node Types
     * TMX
     * Particle
     * Parallax
     * Video
    
-8. Event Dispatcher
+9. Event Dispatcher
     * What is the EventDispatch mechanism?
         * responds to user events.
         * The basics:
@@ -111,31 +113,31 @@
      * Registering event with the dispatcher
      * Removing events from the dispatcher
 
-9. 3D
+10. 3D
     * 3D Sprite
     * 3D Actions
     * 3D Animations
     * Placeholders for: Lights, Shadows, Cameras
 
-10. Lua
+11. Lua
     * call custom c++ from Lua
     * bindings to c++
     * subclassing
     * Placeholders for: memory management, Debug a Lua Game
 
-11. Services
+12. Services
     * other SDK's
     * Plugin-X
     * Placeholders - IAP, FB
     
-12. Physics
+13. Physics
     * What options and why integrated physics engine
     * Physics concepts
     * Physics world, bodies
     * Collision
     * Examples
 
-13. Advanced Topics
+14. Advanced Topics
     * Best Practice - optimization, memory, performance, profiling
     * Sound
     * SQLite
