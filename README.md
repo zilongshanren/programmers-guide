@@ -23,27 +23,29 @@ H.md - Appendix H - Creating a New Example Project
 
 1.md - Chapter 1 - About
 
-2.md - Chapter 2 - Jumping into Cocos2d-x (We are building a simple game, no explanation)
+2.md - Chapter 2 - Basic concepts and essentials
 
-3.md - Chapter 3 - Sprite and Nodes
+3.md - Chapter 3 - Jumping into Cocos2d-x (We are building a simple game, no explanation)
 
-4.md - Chapter 4 - Actions To Nodes
+4.md - Chapter 4 - Sprite and Nodes
 
-5.md - Chapter 5 - Building and Transitioning Scenes
+5.md - Chapter 5 - Actions To Nodes
 
-6.md - Chapter 6 - UI
+6.md - Chapter 6 - Building and Transitioning Scenes
 
-7.md - Chapter 7 - Other Node Types
+7.md - Chapter 7 - UI
 
-8.md - Chapter 8 - Event Dispatcher
+8.md - Chapter 8 - Other Node Types
 
-9.md - Chapter 9 - 3D
+9.md - Chapter 9 - Event Dispatcher
 
-10.md - Chapter 10 - Lua
+10.md - Chapter 10 - 3D
 
-11.md - Chapter 11 - Services
+11.md - Chapter 11 - Lua
 
-12.md - Chapter 12 - Physics
+12.md - Chapter 12 - Services
 
-13.md - Chapter 13 - Advanced Topics
+13.md - Chapter 13 - Physics
+
+14.md - Chapter 14 - Advanced Topics
 
