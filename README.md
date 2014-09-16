@@ -3,6 +3,13 @@ programmers-guide
 
 This is the cocos2d-x programmers guide.
 
+## Conventions used in this book
+
+* `auto` is used for creating local variables.
+* `using namespace cocos2d;` is used to shorten types. 
+* each chapter has a compilable source code sample to demonstrate concepts.
+
+
 [Outline.md](https://github.com/chukong/programmers-guide/blob/master/outline.md) - outline of what the guide will cover
 
 Appendices
