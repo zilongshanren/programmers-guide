@@ -3,18 +3,26 @@ programmers-guide
 
 This is the cocos2d-x programmers guide.
 
+## Conventions used in this book
+
+* `auto` is used for creating local variables.
+* `using namespace cocos2d;` is used to shorten types. 
+* each chapter has a compilable source code sample to demonstrate concepts.
+
+
 [Outline.md](https://github.com/chukong/programmers-guide/blob/master/outline.md) - outline of what the guide will cover
 
 Appendices
 --------
- - [Appendix A - Android with Terminal Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/A.md)
- - [Appendix B - Android with Eclipse Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/B.md)
- - [Appendix C - iOS Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/C.md)
- - [Appendix D - Mac OSX Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/D.md)
- - [Appendix E - Linux Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/E.md)
- - [Appendix F - Win32 Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/F.md)
- - [Appendix G - WP8 Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/G.md)
- - [Appendix H - Creating a New Example Project](https://github.com/chukong/programmers-guide/blob/master/H.md)
+ - [Appendix A - Prerequisites](https://github.com/chukong/programmers-guide/blob/master/A.md)
+ - [Appendix B - Android with Terminal Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/B.md)
+ - [Appendix C - Android with Eclipse Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/C.md)
+ - [Appendix D - iOS Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/D.md)
+ - [Appendix E - Mac OSX Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/E.md)
+ - [Appendix F - Linux Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/F.md)
+ - [Appendix G - Win32 Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/G.md)
+ - [Appendix H - WP8 Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/H.md)
+ - [Appendix I - Creating A New Example Project](https://github.com/chukong/programmers-guide/blob/master/I.md)
 
 Chapters
 --------
