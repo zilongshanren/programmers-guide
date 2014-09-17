@@ -1,7 +1,7 @@
-# Appendix H: Creating a New Example Project
+# Appendix I: Creating a New Example Project
 
 ## Prerequisite 
-* Completed one of the following Appendix A - G.
+* Completed one of the following Appendix A - H.
 
 ## Create A New Project
 	
