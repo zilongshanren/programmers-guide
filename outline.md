@@ -22,17 +22,7 @@
  
 2. Basic Concepts and Essentials
  
-3. Jumping into Cocos2d-x (We are building a simple game, no explanation)
-    * Installation - See appropriate Appendix.
-    * Getting Started.
-    * Creating Your First Scene.
-    * Adding Content to the Scene.
-    * Using Actions to Animate Scenes.
-    * Transitioning Between Scenes.
-    * Building Complex Content Using Nodes.
-    * Creating Nodes That Interact with Each Other.
-
-4. Sprite and Nodes
+3. Sprites
     * What are Sprites?
     * Creating Sprites:    
         * Creating a Textured Sprite.
@@ -45,7 +35,7 @@
         * Anchor Point and Position.
     * SpriteSheets.
     
-5. Actions To Nodes
+4. Actions
     * What are Basic Actions:
         * Animate.
         * Fade In/Out.
@@ -59,7 +49,7 @@
         * Reverse.
     * Running Actions and Sequences.
 
-6. Building and Transitioning Scenes
+5. Building and Transitioning Scenes
     * What is a Scene?
     * Creating a Scene:
         * Creating a Node Tree.
@@ -68,7 +58,7 @@
         * Converting between coordinate systems.
     * Transitioning between Scenes.
 
-7. UI
+6. UI
     * Labels:
          * BMFont.
          * TTF.
@@ -86,13 +76,12 @@
     * Scroll.
     * Layout.
     
-8. Other Node Types
+7. Other Node Types
     * TMX.
     * Particle.
     * Parallax.
-    * Video.
    
-9. Event Dispatcher
+8. Event Dispatcher
     * What is the EventDispatch mechanism?
         * Responds to user events.
         * The basics:
@@ -113,29 +102,31 @@
      * Registering event with the dispatcher.
      * Removing events from the dispatcher.
 
-10. 3D
+9. 3D
     * 3D Sprite.
     * 3D Actions.
     * 3D Animations.
     * Placeholders for: Lights, Shadows, Cameras.
 
-11. Lua
+10. Lua
     * call custom c++ from Lua.
     * bindings to c++.
     * subclassing.
     * Placeholders for: memory management, Debug a Lua Game.
 
-12. Services
+11. Services
     * Other SDK's.
     * Plugin-X.
     * Placeholders - IAP, FB.
     
-13. Physics
+12. Physics
     * What options and why integrated physics engine?
     * Physics concepts.
     * Physics world, bodies.
     * Collision.
     * Examples.
+
+13. Audio
 
 14. Advanced Topics
     * Best Practice - optimization, memory, performance, profiling.
