@@ -1,5 +1,7 @@
 # Appendix C: Android (Eclipse) Installation and Setup
 
+XXX: Screenshots for Eclipse
+
 ## Prerequisite
 * Complete steps in Appendix A
 
@@ -7,7 +9,7 @@
 
 * Launch Eclipse
 
-* Right click your mouse at the empty area of the `Package Explorer` and choose `Import...`. 
+* Right click your mouse at the empty area of the `Package Explorer` and choose `Import...`.
 
 * Choose `Existing Android Code Into Workspace` from the pop up dialog and Click `Next`.
 
@@ -16,7 +18,7 @@
 * Click Finish.
 
 ## Import Libcocos2dx Project
-* Same steps as above only using the path of the libcocos2dx project is `[your own game project folder]/cocos/2d/platform/android/java`. 
+* Same steps as above only using the path of the libcocos2dx project is `[your own game project folder]/cocos/2d/platform/android/java`.
 
 ## Build and Run the Android Project
 * Connect your Android phone with `USB remote debugging` option enabled.

@@ -22,4 +22,4 @@
 
 * OS X v10.6+ for Mac games
 
-* Windows 7+ for Win games
+* Windows 7+ for Windows games
