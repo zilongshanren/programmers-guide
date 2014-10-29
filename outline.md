@@ -5,7 +5,7 @@
 
 1. About Cocos2d-x
     * A very brief history:
-        * Launched in July 2010, cocos2d-x is the best open-source game engine available. 
+        * Launched in July 2010, cocos2d-x is the best open-source game engine available.
         * Versioning information (i.e C++, JS, Lua, not related to Cocos2d-iphone, etc)
          * Cocos2d-x comes in a variety of flavors:
              * c++ [c++](http://www.cocos2d-x.org/products#cocos2dx)
@@ -19,12 +19,12 @@
     * Why choose Cocos2d-x vs other game engines?
     * Where to get help:
          * [Official Forums](http://http://discuss.cocos2d-x.org)
- 
+
 2. Basic Concepts and Essentials
- 
+
 3. Sprites
     * What are Sprites?
-    * Creating Sprites:    
+    * Creating Sprites:
         * Creating a Textured Sprite.
         * Creating an Untextured Sprite.
         * Creating a Sprite From a SpriteFrame.
@@ -34,7 +34,7 @@
         * Resizing.
         * Anchor Point and Position.
     * SpriteSheets.
-    
+
 4. Actions
     * What are Basic Actions:
         * Animate.
@@ -43,7 +43,7 @@
         * Rotate.
         * Scale.
         * Tint.
-        * Tweening and Easing.
+        * Easing.
     * What are Sequences:
         * Spawn.
         * Reverse.
@@ -75,12 +75,12 @@
     * Buttons.
     * Scroll.
     * Layout.
-    
+
 7. Other Node Types
     * TMX.
     * Particle.
     * Parallax.
-   
+
 8. Event Dispatcher
     * What is the EventDispatch mechanism?
         * Responds to user events.
@@ -93,11 +93,11 @@
              * describe what to override.
          * `EventListenerKeyboard` - responds to keyboard events
              * describe what to override.
-         * `EventListenerAcceleration` - responds to accelerometer events    
+         * `EventListenerAcceleration` - responds to accelerometer events
              * describe what to override.
          * `EventListenMouse` - responds to mouse events
              * describe what to override.
-         * `EventListenerCustom` - responds to custom events   
+         * `EventListenerCustom` - responds to custom events
              * describe what to override.
      * Registering event with the dispatcher.
      * Removing events from the dispatcher.
@@ -118,7 +118,7 @@
     * Other SDK's.
     * Plugin-X.
     * Placeholders - IAP, FB.
-    
+
 12. Physics
     * What options and why integrated physics engine?
     * Physics concepts.
