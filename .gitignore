@@ -1,3 +1,9 @@
+# HTML5 and build programmer guide objects
+_output
+_output/html
+ProgrammersGuide.epub
+ProgrammersGuide.pdf
+
 # Generated
 ProgrammerGuideGame/cocos2d
 
