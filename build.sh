@@ -17,20 +17,20 @@ pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/1.html 1.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/2.html 2.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/3.html 3.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/4.html 4.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/4.html 4.md
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/5.html 5.md
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/6.html 6.md
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/7.html 7.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/8.html 8.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/8.html 8.md
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/9.html 9.md
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/10.html 10.md
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/11.html 11.md
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/12.html 12.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/13.html 13.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/13.html 13.md
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/14.html 14.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/A.html A.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/B.html B.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/C.html C.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/A.html A.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/B.html B.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/C.html C.md
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/D.html D.md
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/E.html E.md
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/F.html F.md
@@ -42,7 +42,7 @@ echo "copying the html resources..."
 cp main.html index.html solarized-light.css _output/html/.
 cp -r ./2 _output/html/.
 cp -r ./3 _output/html/.
-#cp -r ./4 _output/html/.
+cp -r ./4 _output/html/.
 #cp -r ./5 _output/html/.
 #cp -r ./6 _output/html/.
 #cp -r ./7 _output/html/.
@@ -50,9 +50,8 @@ cp -r ./3 _output/html/.
 #cp -r ./10 _output/html/.
 #cp -r ./12 _output/html/.
 #cp -r ./14 _output/html/.
-#cp -r ./A _output/html/.
-#cp -r ./B _output/html/.
-#cp -r ./C _output/html/.
+cp -r ./B _output/html/.
+cp -r ./C _output/html/.
 #cp -r ./D _output/html/.
 #cp -r ./E _output/html/.
 #cp -r ./F _output/html/.
