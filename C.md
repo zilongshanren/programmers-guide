@@ -3,8 +3,7 @@
 ## Prerequisite
 * Complete steps in Appendix A
 
-* Eclipse ADT Bundle [http://developer.android.com/sdk/index.html]
-(http://developer.android.com/sdk/index.html)
+* Eclipse ADT Bundle [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
 
 ## Open the proj.android project with Eclipse.
 

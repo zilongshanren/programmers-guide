@@ -12,12 +12,15 @@ html {
 }
 body {
 	background-color: #fdf6e3;
-	margin: 0 auto;
+	margin-left: 45px;
+	margin-top: 15px;
+	margin-bottom: 0px;
+	margin-right: 0px;
 	font-family: Georgia, Palatino, serif;
 	color: #444444;
 	line-height: 1.2; /*Jason was 1 */
 	max-width: 960px;
-	padding: 30px;
+	padding: 30px; /* Jason was 30 */
 }
 code {
 	background-color: #eee8d5;
@@ -25,8 +28,15 @@ code {
 }
 
 #wrap {
-	width:900px;
-	margin:0 auto;
+	width:960px;
+	/*margin:0 auto; */
+}
+
+#preview_col {
+	float:left;
+	width:35px;
+	padding-top:30px;
+	padding-right:30px;
 }
 #left_col {
 	float:left;
@@ -34,7 +44,7 @@ code {
 }
 #right_col {
 	float:right;
-	width:650px;
+	width:640px; /* Jason was 650 */
 }
 a {
 		color: #b58900;
@@ -75,6 +85,9 @@ li ul, li ul {
 <body>
 
 <div id="wrap">
+		<div id="preview_col">
+			<img src="preview.png">
+		</div>
     <div id="left_col">
 				<h2>Chapters</h2>
 							<ul>

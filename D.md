@@ -1,19 +1,25 @@
 # Appendix D: iOS Installation and Setup
 
-
-XXX: we are not using cocos2d-x v3.0 anymore. update it.
-
 ## Environment Requirements
 * Mac OS X 10.8+
-* Cocos2d-x v3.0 ([HERE](http://cocos2d-x.org/download))
-* Xcode 4.6.2+ ([Apple Developer Website](https://developer.apple.com/downloads/index.action))
+
+* Cocos2d-x v3.3 [https://cocos2d-x.org/download](https://cocos2d-x.org/download "cocos2d-x")
+
+* Xcode 4.6.2+ [https://developer.apple.com/downloads/index.action](https://developer.apple.com/downloads/index.action)
+
 * iOS 5.0+
 
 ## Prerequisite
+* Download cocos2d-x and unzip it. (maybe: ~/). Right click on the `.zip` file
+and unzip it:
 
-XXX: show how to unzip
+![](D/unzip.png "")
 
-* Download cocos2d-x and unzip it. (maybe: ~/)
+![](D/unzipping.png "")
+
+* After unzipping you should have a folder structure similar to:
+
+![](D/contents.png "")
 
 ## Build and Run
 * Enter `cocos2d-x/build` and open `cocos2d_tests.xcodeproj`
@@ -21,4 +27,7 @@ XXX: show how to unzip
 * Click `run` to compile and run `cpp-tests`
 
 ## Running on an IOS Device
-* In order to run on IOS Device an [IOS Developer Program](https://developer.apple.com/programs/ios/) membership is needed. The steps to run on iOS device are the same except you select you device from the device list.
+* In order to run on IOS Device an IOS Developer Program membership is needed.
+You can purchase one from Apple: [https://developer.apple.com/programs/ios/](https://developer.apple.com/programs/ios/)
+. The steps to run on iOS device are the same as running in a simulator except
+you select you device from the device list.

@@ -37,7 +37,7 @@ body {
   color: #444444;
   line-height: 1;
   max-width: 960px;
-  padding: 30px;
+  padding: 5px; /* Jason was 30 */
 }
 a:focus {
   outline: thin dotted;

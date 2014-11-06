@@ -5,17 +5,13 @@
 
 * Cocos2d-x v3.3 [https://cocos2d-x.org/download](https://cocos2d-x.org/download "cocos2d-x")
 
-* JDK/SDK 1.6+ [http://www.oracle.com/technetwork/java/javase/downloads/index.html]
-(http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* JDK/SDK 1.6+ [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
-* Android SDK [http://developer.android.com/sdk/index.html]
-(http://developer.android.com/sdk/index.html)
+* Android SDK [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
 
-* NDK r9d+ [https://developer.android.com/tools/sdk/ndk/index.html]
-(https://developer.android.com/tools/sdk/ndk/index.html)
+* NDK r9d+ [https://developer.android.com/tools/sdk/ndk/index.html](https://developer.android.com/tools/sdk/ndk/index.html)
 
-* Apache Ant [http://ant.apache.org/bindownload.cgi]
-(http://ant.apache.org/bindownload.cgi)
+* Apache Ant [http://ant.apache.org/bindownload.cgi](http://ant.apache.org/bindownload.cgi)
 
 * Python 2.7.5
 

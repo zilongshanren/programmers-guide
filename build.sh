@@ -7,12 +7,14 @@ echo "A LaTex Distribution: http://www.tug.org/mactex/downloading.html"
 echo "run: sudo /usr/local/texlive/2014/bin/universal-darwin/tlmgr install ec ecc"
 echo ""
 echo "To Do: Be able to insert a page break at the end of each chapter. right now it is continuous"
+echo ""
 
 # build the html version
 echo "building the html version..."
 mkdir -p _output/html
 
 echo "building the html pages..."
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/blank.html blank.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/intro.html title.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/1.html 1.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/2.html 2.md
@@ -31,15 +33,15 @@ pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/A.html A.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/B.html B.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/C.html C.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/D.html D.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/E.html E.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/F.html F.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/G.html G.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/H.html H.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/I.html I.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/D.html D.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/E.html E.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/F.html F.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/G.html G.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/H.html H.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/I.html I.md
 
 echo "copying the html resources..."
-cp main.html index.html solarized-light.css _output/html/.
+cp main.html index.html solarized-light.css preview.png _output/html/.
 cp -r ./2 _output/html/.
 cp -r ./3 _output/html/.
 cp -r ./4 _output/html/.
@@ -52,20 +54,68 @@ cp -r ./4 _output/html/.
 #cp -r ./14 _output/html/.
 cp -r ./B _output/html/.
 cp -r ./C _output/html/.
-#cp -r ./D _output/html/.
-#cp -r ./E _output/html/.
-#cp -r ./F _output/html/.
-#cp -r ./G _output/html/.
-#cp -r ./H _output/html/.
-#cp -r ./I _output/html/.
+cp -r ./D _output/html/.
+#cp -r ./E _output/html/. -- NO NEED THERE ARE NO FILES HERE YET SHARED WITH APPX D
+cp -r ./F _output/html/.
+cp -r ./G _output/html/.
+cp -r ./H _output/html/.
+cp -r ./I _output/html/.
 
 ### Build the eBook version
 echo "building the ebook version..."
-pandoc -S --epub-stylesheet=style.css -o ProgrammersGuide.epub title.md 1.md 2.md 3.md
+pandoc -S --epub-stylesheet=style.css -o _output/html/ProgrammersGuide.epub \
+_output/html/intro.html \
+_output/html/blank.html \
+_output/html/1.html \
+_output/html/blank.html \
+_output/html/2.html \
+_output/html/blank.html \
+_output/html/3.html \
+_output/html/blank.html \
+_output/html/4.html \
+_output/html/blank.html \
+_output/html/5.html \
+_output/html/blank.html \
+_output/html/6.html \
+_output/html/blank.html \
+_output/html/7.html \
+_output/html/blank.html \
+_output/html/8.html \
+_output/html/blank.html \
+_output/html/9.html \
+_output/html/blank.html \
+_output/html/10.html \
+_output/html/blank.html \
+_output/html/11.html \
+_output/html/blank.html \
+_output/html/12.html \
+_output/html/blank.html \
+_output/html/13.html \
+_output/html/blank.html \
+_output/html/14.html \
+_output/html/blank.html \
+_output/html/A.html \
+_output/html/blank.html \
+_output/html/B.html \
+_output/html/blank.html \
+_output/html/C.html \
+_output/html/blank.html \
+_output/html/D.html \
+_output/html/blank.html \
+_output/html/E.html \
+_output/html/blank.html \
+_output/html/F.html \
+_output/html/blank.html \
+_output/html/G.html \
+_output/html/blank.html \
+_output/html/H.html \
+_output/html/blank.html \
+_output/html/I.html \
+_output/html/blank.html
 
 ### Building the PDF version
 echo "building the PDF version..."
-pandoc -s -o ProgrammersGuide.pdf ProgrammersGuide.epub
+pandoc -s -o _output/html/ProgrammersGuide.pdf _output/html/ProgrammersGuide.epub
 
 
 ### DOnt remove below here right yet.
@@ -111,7 +161,8 @@ pandoc -s -o ProgrammersGuide.pdf ProgrammersGuide.epub
 
 #pandoc --toc --highlight-style=kate -V documentclass=book -markdown_github -s -o manual.html title.md 1.md 2.md 3.md 4.md
 
-#pandoc --toc --highlight-style=kate -V documentclass=report -markdown_github -s -o manual.html title.md 1.md 2.md 3.md 4.md
+#pandoc --toc --highlight-style=kate -V documentclass=report -markdown_github -s
+#-o manual.html title.md 1.md 2.md 3.md 4.md
 
 #pandoc -markdown_github -s -o manual.pdf title.md 1.md 2.md 3.md 4.md
 
