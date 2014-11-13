@@ -7,81 +7,7 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 
-<style type="text/css">
-html {
-}
-body {
-	background-color: #fdf6e3;
-	margin-left: 45px;
-	margin-top: 15px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	font-family: Georgia, Palatino, serif;
-	color: #444444;
-	line-height: 1.2; /*Jason was 1 */
-	max-width: 960px;
-	padding: 30px; /* Jason was 30 */
-}
-code {
-	background-color: #eee8d5;
-	padding: 2px;
-}
-
-#wrap {
-	width:960px;
-	height: 100%;
-	/*margin:0 auto; */
-}
-
-#preview_col {
-	float:left;
-	width:35px;
-	padding-top:30px;
-	padding-right:30px;
-}
-#left_col {
-	float:left;
-	width:250px;
-}
-#right_col {
-	float:right;
-	width:640px; /* Jason was 650 */
-	height:100%;
-}
-a {
-		color: #b58900;
-		margin: 0;
-		padding: 0;
-		vertical-align: baseline;
-		text-decoration: none;
-}
-a:hover {
-		text-decoration: none;
-		color: #cb4b16;
-}
-a:visited {
-		color: #cb4b16;
-}
-ul, ol {
-		padding: 0;
-		margin: 0;
-		list-style-type: none;
-}
-li {
-		line-height: 24px;
-		list-style-type: none;
-}
-li ul, li ul {
-	  height: 1%;
-	  list-style-type: none;
-		margin-left: 24px;
-		display: block;
-		padding: 5px 10px;
-		color: #59503e;
-		text-decoration: none;
-		font-weight: bold;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
 <body>
@@ -90,38 +16,16 @@ li ul, li ul {
 		<div id="preview_col">
 			<img src="preview.png">
 		</div>
-    <div id="left_col">
-				<h2>Chapters</h2>
-							<ul>
-										<li><a href="intro.html" target="inlineframe">Intro</a></li>
-										<li><a href="1.html" target="inlineframe">Ch 1: About Cocos2d-x</a></li>
-										<li><a href="2.html" target="inlineframe">Ch 2: Basic Concepts</a></li>
-										<li><a href="3.html" target="inlineframe">Ch 3: Sprites</a></li>
-										<li><a href="4.html" target="inlineframe">Ch 4: Actions</a></li>
-										<li><a href="5.html" target="inlineframe">Ch 5: Scenes</a></li>
-										<li><a href="6.html" target="inlineframe">Ch 6: UI</a></li>
-										<li><a href="7.html" target="inlineframe">Ch 7: Other Node Types</a></li>
-										<li><a href="8.html" target="inlineframe">Ch 8: Event Dispatch</a></li>
-										<li><a href="9.html" target="inlineframe">Ch 9: 3D</a></li>
-										<li><a href="10.html" target="inlineframe">Ch 10: Lua</a></li>
-										<li><a href="11.html" target="inlineframe">Ch 11: Services</a></li>
-										<li><a href="12.html" target="inlineframe">Ch 12: Physics</a></li>
-										<li><a href="13.html" target="inlineframe">Ch 13: Audio</a></li>
-										<li><a href="14.html" target="inlineframe">Ch 14: Advanced Topics</a></li>
-										<li><a href="A.html" target="inlineframe">Appx A: Prerequisites</a></li>
-										<li><a href="B.html" target="inlineframe">Appx B: Android (Terminal) Setup</a></li>
-										<li><a href="C.html" target="inlineframe">Appx C: Android (Eclipse) Setup</a></li>
-										<li><a href="D.html" target="inlineframe">Appx D: iOS Setup</a></li>
-										<li><a href="E.html" target="inlineframe">Appx E: Mac OSX Setup</a></li>
-										<li><a href="F.html" target="inlineframe">Appx F: Linux Setup</a></li>
-										<li><a href="G.html" target="inlineframe">Appx G: Windows Setup</a></li>
-										<li><a href="H.html" target="inlineframe">Appx H: Windows Phone Setup</a></li>
-										<li><a href="I.html" target="inlineframe">Appx I: New/Empty Project</a></li>
-							</ul>
-    </div>
+
+		<div id="left_col">
+			<object name="left_col" type="text/html" data="m_toc.html" width=250 height=800></object>
+	  </div>
+
     <div id="right_col">
-        <iframe name="inlineframe" src="intro.html" frameborder="0" scrolling="auto" width=900 height=800 marginwidth=5 marginheight=5 ></iframe>
-    </div>
+        <!--<iframe name="inlineframe" src="intro.html" frameborder="0" scrolling="yes" width=900 height=800 marginwidth=5 marginheight=5 ></iframe>-->
+				<object name="right_col" type="text/html" data="intro.html" frameborder="0" scrolling="yes" width=900 height=800 marginwidth=5 marginheight=5></object>
+		</div>
 </div>
 
+</body>
 </html>
