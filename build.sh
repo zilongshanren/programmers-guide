@@ -9,7 +9,7 @@ echo ""
 echo "To Do: Be able to insert a page break at the end of each chapter. right now it is continuous"
 echo ""
 
-# build the html version
+### build the html version
 echo "building the html version..."
 mkdir -p _output/html
 
@@ -24,7 +24,7 @@ pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/6.html 6.md
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/7.html 7.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/8.html 8.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/9.html 9.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/9.html 9.md
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/10.html 10.md
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/11.html 11.md
 #pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/12.html 12.md
@@ -49,10 +49,11 @@ cp -r ./4 _output/html/.
 #cp -r ./5 _output/html/.
 #cp -r ./6 _output/html/.
 #cp -r ./7 _output/html/.
-#cp -r ./9 _output/html/.
+cp -r ./9 _output/html/.
 #cp -r ./10 _output/html/.
 #cp -r ./12 _output/html/.
 #cp -r ./14 _output/html/.
+#cp -r ./A _output/html/. -- NO NEED THERE ARE NO FILES HERE YET
 cp -r ./B _output/html/.
 cp -r ./C _output/html/.
 cp -r ./D _output/html/.
