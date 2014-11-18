@@ -1,6 +1,6 @@
 % Cocos2d-x Programmers Guide v3.3
 % The Cocos2d-x Team
-% 2014.11.05 C++
+% 2014.11.18 C++
 
 [PDF Version](http://cocos2d-x.org/programmersguide/ProgrammersGuide.pdf)
 <br /><br />
