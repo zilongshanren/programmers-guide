@@ -10,8 +10,14 @@ echo "To Do: Be able to insert a page break at the end of each chapter. right no
 echo ""
 
 ### build the html version
+### We need to move the appropriate web sized images to directory each chapter
+### is looking for.
 echo "building the html version..."
 mkdir -p _output/html
+
+echo "bringing in resources..."
+cp -r 2-web/* 2
+
 
 echo "building the html pages..."
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/blank.html blank.md
@@ -21,15 +27,15 @@ pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/3.html 3.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/4.html 4.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/5.html 5.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/6.html 6.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/7.html 7.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/6.html 6.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/7.html 7.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/8.html 8.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/9.html 9.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/10.html 10.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/11.html 11.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/12.html 12.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/10.html 10.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/11.html 11.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/12.html 12.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/13.html 13.md
-#pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/14.html 14.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/14.html 14.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/A.html A.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/B.html B.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/C.html C.md
@@ -47,12 +53,12 @@ cp -r ./2 _output/html/.
 cp -r ./3 _output/html/.
 cp -r ./4 _output/html/.
 cp -r ./5 _output/html/.
-#cp -r ./6 _output/html/.
-#cp -r ./7 _output/html/.
+cp -r ./6 _output/html/.
+cp -r ./7 _output/html/.
 cp -r ./9 _output/html/.
-#cp -r ./10 _output/html/.
-#cp -r ./12 _output/html/.
-#cp -r ./14 _output/html/.
+cp -r ./10 _output/html/.
+cp -r ./12 _output/html/.
+cp -r ./14 _output/html/.
 #cp -r ./A _output/html/. -- NO NEED THERE ARE NO FILES HERE YET
 cp -r ./B _output/html/.
 cp -r ./C _output/html/.
@@ -64,7 +70,14 @@ cp -r ./H _output/html/.
 cp -r ./I _output/html/.
 
 ### Build the eBook version
+### When making the eBook andPDF the images for the web are to large.
+### Lets temporarily rename the image directories for each chapter and use
+### directories that have correctly sized images.
+### Need to rename these when done so this process can be run again
 echo "building the ebook version..."
+
+
+
 pandoc -S --epub-stylesheet=style.css -o _output/html/ProgrammersGuide.epub \
 _output/html/intro.html \
 _output/html/blank.html \
