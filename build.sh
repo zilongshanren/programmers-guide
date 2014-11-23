@@ -15,9 +15,29 @@ echo ""
 echo "building the html version..."
 mkdir -p _output/html
 
-echo "bringing in resources..."
+echo "bringing in web resources..."
 cp -r 2-web/* 2
-
+cp -r 3-web/* 3
+cp -r 4-web/* 4
+cp -r 5-web/* 5
+cp -r 6-web/* 6
+cp -r 7-web/* 7
+#cp -r 8-web/* 8 -- NO NEED THERE ARE NO FILES HERE YET
+cp -r 9-web/* 9
+cp -r 10-web/* 10
+#cp -r 11-web/* 11 -- NO NEED THERE ARE NO FILES HERE YET
+cp -r 12-web/* 12
+cp -r 13-web/* 13
+cp -r 14-web/* 14
+#cp -r A-web/* A -- NO NEED THERE ARE NO FILES HERE YET
+cp -r B-web/* B
+cp -r C-web/* C
+cp -r D-web/* D
+#cp -r E-web/* E -- NO NEED THERE ARE NO FILES HERE YET SHARED WITH APPX D
+cp -r F-web/* F
+cp -r G-web/* G
+cp -r H-web/* H
+cp -r I-web/* I
 
 echo "building the html pages..."
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/blank.html blank.md
@@ -46,28 +66,32 @@ pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/H.html H.md
 pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/html/I.html I.md
 
-echo "copying the html resources..."
+echo "copying the html resources to output directory..."
 cp main.html index.html solarized-light.css main.css preview.png m_toc.html ch*.html _output/html/.
 
-cp -r ./2 _output/html/.
-cp -r ./3 _output/html/.
-cp -r ./4 _output/html/.
-cp -r ./5 _output/html/.
-cp -r ./6 _output/html/.
-cp -r ./7 _output/html/.
-cp -r ./9 _output/html/.
-cp -r ./10 _output/html/.
-cp -r ./12 _output/html/.
-cp -r ./14 _output/html/.
-#cp -r ./A _output/html/. -- NO NEED THERE ARE NO FILES HERE YET
-cp -r ./B _output/html/.
-cp -r ./C _output/html/.
-cp -r ./D _output/html/.
-#cp -r ./E _output/html/. -- NO NEED THERE ARE NO FILES HERE YET SHARED WITH APPX D
-cp -r ./F _output/html/.
-cp -r ./G _output/html/.
-cp -r ./H _output/html/.
-cp -r ./I _output/html/.
+echo "moving web resources to the output directory..."
+mv 2/ _output/html/2
+mv 3/ _output/html/3
+mv 4/ _output/html/4
+mv 5/ _output/html/5
+mv 6/ _output/html/6
+mv 7/ _output/html/7
+#mv 8/ _output/html/8 -- NO NEED THERE ARE NO FILES HERE YET
+mv 9/ _output/html/9
+mv 10/ _output/html/10
+#mv 11/ _output/html/11 -- NO NEED THERE ARE NO FILES HERE YET
+mv 12/ _output/html/12
+mv 13/ _output/html/13
+mv 14/ _output/html/14
+#mv A/ _output/html/A -- NO NEED THERE ARE NO FILES HERE YET
+mv B/ _output/html/B
+mv C/ _output/html/C
+mv D/ _output/html/D
+#mv E/ _output/html/E -- NO NEED THERE ARE NO FILES HERE YET SHARED WITH APPX D
+mv F/ _output/html/F
+mv G/ _output/html/G
+mv H/ _output/html/H
+mv I/ _output/html/I
 
 ### Build the eBook version
 ### When making the eBook andPDF the images for the web are to large.
@@ -75,58 +99,133 @@ cp -r ./I _output/html/.
 ### directories that have correctly sized images.
 ### Need to rename these when done so this process can be run again
 echo "building the ebook version..."
+mkdir -p _output/print
 
+echo "bringing in print resources..."
+cp -r 2-print/* 2
+cp -r 3-print/* 3
+cp -r 4-print/* 4
+cp -r 5-print/* 5
+cp -r 6-print/* 6
+cp -r 7-print/* 7
+#cp -r 8-print/* 8 -- NO NEED THERE ARE NO FILES HERE YET
+cp -r 9-print/* 9
+cp -r 10-print/* 10
+#cp -r 11-print/* 11 -- NO NEED THERE ARE NO FILES HERE YET
+cp -r 12-print/* 12
+cp -r 13-print/* 13
+cp -r 14-print/* 14
+#cp -r A-print/* A -- NO NEED THERE ARE NO FILES HERE YET
+cp -r B-print/* B
+cp -r C-print/* C
+cp -r D-print/* D
+#cp -r E-print/* E -- NO NEED THERE ARE NO FILES HERE YET SHARED WITH APPX D
+cp -r F-print/* F
+cp -r G-print/* G
+cp -r H-print/* H
+cp -r I-print/* I
 
+echo "building the print pages..."
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/blank.html blank.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/intro.html title.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/1.html 1.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/2.html 2.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/3.html 3.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/4.html 4.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/5.html 5.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/6.html 6.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/7.html 7.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/8.html 8.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/9.html 9.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/10.html 10.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/11.html 11.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/12.html 12.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/13.html 13.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/14.html 14.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/A.html A.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/B.html B.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/C.html C.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/D.html D.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/E.html E.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/F.html F.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/G.html G.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/H.html H.md
+pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o _output/print/I.html I.md
 
-pandoc -S --epub-stylesheet=style.css -o _output/html/ProgrammersGuide.epub \
-_output/html/intro.html \
-_output/html/blank.html \
-_output/html/1.html \
-_output/html/blank.html \
-_output/html/2.html \
-_output/html/blank.html \
-_output/html/3.html \
-_output/html/blank.html \
-_output/html/4.html \
-_output/html/blank.html \
-_output/html/5.html \
-_output/html/blank.html \
-_output/html/6.html \
-_output/html/blank.html \
-_output/html/7.html \
-_output/html/blank.html \
-_output/html/8.html \
-_output/html/blank.html \
-_output/html/9.html \
-_output/html/blank.html \
-_output/html/10.html \
-_output/html/blank.html \
-_output/html/11.html \
-_output/html/blank.html \
-_output/html/12.html \
-_output/html/blank.html \
-_output/html/13.html \
-_output/html/blank.html \
-_output/html/14.html \
-_output/html/blank.html \
-_output/html/A.html \
-_output/html/blank.html \
-_output/html/B.html \
-_output/html/blank.html \
-_output/html/C.html \
-_output/html/blank.html \
-_output/html/D.html \
-_output/html/blank.html \
-_output/html/E.html \
-_output/html/blank.html \
-_output/html/F.html \
-_output/html/blank.html \
-_output/html/G.html \
-_output/html/blank.html \
-_output/html/H.html \
-_output/html/blank.html \
-_output/html/I.html \
-_output/html/blank.html
+echo "moving print resources to the output directory..."
+mv 2/ _output/print/2
+mv 3/ _output/print/3
+mv 4/ _output/print/4
+mv 5/ _output/print/5
+mv 6/ _output/print/6
+mv 7/ _output/print/7
+#mv 8/ _output/print/8 -- NO NEED THERE ARE NO FILES HERE YET
+mv 9/ _output/print/9
+mv 10/ _output/print/10
+#mv 11/ _output/print/11 -- NO NEED THERE ARE NO FILES HERE YET
+mv 12/ _output/print/12
+mv 13/ _output/print/13
+mv 14/ _output/print/14
+#mv A/ _output/print/A -- NO NEED THERE ARE NO FILES HERE YET
+mv B/ _output/print/B
+mv C/ _output/print/C
+mv D/ _output/print/D
+#mv E/ _output/print/E -- NO NEED THERE ARE NO FILES HERE YET SHARED WITH APPX D
+mv F/ _output/print/F
+mv G/ _output/print/G
+mv H/ _output/print/H
+mv I/ _output/print/I
+
+echo "building the epub version..."
+pandoc -S --epub-stylesheet=style.css -o _output/print/ProgrammersGuide.epub \
+_output/print/intro.html \
+_output/print/blank.html \
+_output/print/1.html \
+_output/print/blank.html \
+_output/print/2.html \
+_output/print/blank.html \
+_output/print/3.html \
+_output/print/blank.html \
+_output/print/4.html \
+_output/print/blank.html \
+_output/print/5.html \
+_output/print/blank.html \
+_output/print/6.html \
+_output/print/blank.html \
+_output/print/7.html \
+_output/print/blank.html \
+_output/print/8.html \
+_output/print/blank.html \
+_output/print/9.html \
+_output/print/blank.html \
+_output/print/10.html \
+_output/print/blank.html \
+_output/print/11.html \
+_output/print/blank.html \
+_output/print/12.html \
+_output/print/blank.html \
+_output/print/13.html \
+_output/print/blank.html \
+_output/print/14.html \
+_output/print/blank.html \
+_output/print/A.html \
+_output/print/blank.html \
+_output/print/B.html \
+_output/print/blank.html \
+_output/print/C.html \
+_output/print/blank.html \
+_output/print/D.html \
+_output/print/blank.html \
+_output/print/E.html \
+_output/print/blank.html \
+_output/print/F.html \
+_output/print/blank.html \
+_output/print/G.html \
+_output/print/blank.html \
+_output/print/H.html \
+_output/print/blank.html \
+_output/print/I.html \
+_output/print/blank.html
 
 ### Building the PDF version
 echo "building the PDF version..."
