@@ -70,28 +70,30 @@ echo "copying the html resources to output directory..."
 cp main.html index.html solarized-light.css main.css preview.png m_toc.html ch*.html _output/html/.
 
 echo "moving web resources to the output directory..."
-mv 2/ _output/html/2
-mv 3/ _output/html/3
-mv 4/ _output/html/4
-mv 5/ _output/html/5
-mv 6/ _output/html/6
-mv 7/ _output/html/7
-#mv 8/ _output/html/8 -- NO NEED THERE ARE NO FILES HERE YET
-mv 9/ _output/html/9
-mv 10/ _output/html/10
-#mv 11/ _output/html/11 -- NO NEED THERE ARE NO FILES HERE YET
-mv 12/ _output/html/12
-#mv 13/ _output/html/13 -- NO NEED THERE ARE NO FILES HERE YET
-mv 14/ _output/html/14
-#mv A/ _output/html/A -- NO NEED THERE ARE NO FILES HERE YET
-mv B/ _output/html/B
-mv C/ _output/html/C
-mv D/ _output/html/D
-#mv E/ _output/html/E -- NO NEED THERE ARE NO FILES HERE YET SHARED WITH APPX D
-mv F/ _output/html/F
-mv G/ _output/html/G
-mv H/ _output/html/H
-mv I/ _output/html/I
+rsync -a 2/ _output/html/2/
+rsync -a 3/ _output/html/3/
+rsync -a 4/ _output/html/4/
+rsync -a 5/ _output/html/5/
+rsync -a 6/ _output/html/6/
+rsync -a 7/ _output/html/7/
+#rsync -a 8/ _output/html/8/ -- NO NEED THERE ARE NO FILES HERE YET
+rsync -a 9/ _output/html/9/
+rsync -a 10/ _output/html/10/
+#rsync -a 11/ _output/html/11/ -- NO NEED THERE ARE NO FILES HERE YET
+rsync -a 12/ _output/html/12/
+#rsync -a 13/ _output/html/13/ -- NO NEED THERE ARE NO FILES HERE YET
+rsync -a 14/ _output/html/14/
+#rsync -a A/ _output/html/A/ -- NO NEED THERE ARE NO FILES HERE YET
+rsync -a B/ _output/html/B/
+rsync -a C/ _output/html/C/
+rsync -a D/ _output/html/D/
+#rsync -a E/ _output/html/E/ -- NO NEED THERE ARE NO FILES HERE YET SHARED WITH APPX D
+rsync -a F/ _output/html/F/
+rsync -a G/ _output/html/G/
+rsync -a H/ _output/html/H/
+rsync -a I/ _output/html/I/
+
+rm -rf 10/ 12/ 14/ 2/ 3/ 4/ 5/ 6/ 7/ 9/ B/ C/ D/ F/ G/ H/ I/
 
 ### Build the eBook version
 ### When making the eBook andPDF the images for the web are to large.
@@ -211,28 +213,30 @@ echo "building the PDF version..."
 pandoc -s -o _output/print/ProgrammersGuide.pdf _output/print/ProgrammersGuide.epub
 
 echo "moving print resources to the output directory..."
-mv 2/ _output/print/2
-mv 3/ _output/print/3
-mv 4/ _output/print/4
-mv 5/ _output/print/5
-mv 6/ _output/print/6
-mv 7/ _output/print/7
-#mv 8/ _output/print/8 -- NO NEED THERE ARE NO FILES HERE YET
-mv 9/ _output/print/9
-mv 10/ _output/print/10
-#mv 11/ _output/print/11 -- NO NEED THERE ARE NO FILES HERE YET
-mv 12/ _output/print/12
-#mv 13/ _output/print/13 -- NO NEED THERE ARE NO FILES HERE YET
-mv 14/ _output/print/14
-#mv A/ _output/print/A -- NO NEED THERE ARE NO FILES HERE YET
-mv B/ _output/print/B
-mv C/ _output/print/C
-mv D/ _output/print/D
-#mv E/ _output/print/E -- NO NEED THERE ARE NO FILES HERE YET SHARED WITH APPX D
-mv F/ _output/print/F
-mv G/ _output/print/G
-mv H/ _output/print/H
-mv I/ _output/print/I
+rsync -a 2/ _output/print/2/
+rsync -a 3/ _output/print/3/
+rsync -a 4/ _output/print/4/
+rsync -a 5/ _output/print/5/
+rsync -a 6/ _output/print/6/
+rsync -a 7/ _output/print/7/
+#rsync -a 8/ _output/print/8/ -- NO NEED THERE ARE NO FILES HERE YET
+rsync -a 9/ _output/print/9/
+rsync -a 10/ _output/print/10/
+#rsync -a 11/ _output/print/11/ -- NO NEED THERE ARE NO FILES HERE YET
+rsync -a 12/ _output/print/12/
+#rsync -a 13/ _output/print/13/ -- NO NEED THERE ARE NO FILES HERE YET
+rsync -a 14/ _output/print/14/
+#rsync -a A/ _output/print/A/ -- NO NEED THERE ARE NO FILES HERE YET
+rsync -a B/ _output/print/B/
+rsync -a C/ _output/print/C/
+rsync -a D/ _output/print/D/
+#rsync -a E/ _output/print/E/ -- NO NEED THERE ARE NO FILES HERE YET SHARED WITH APPX D
+rsync -a F/ _output/print/F/
+rsync -a G/ _output/print/G/
+rsync -a H/ _output/print/H/
+rsync -a I/ _output/print/I/
 
-cp _output/print/ProgrammersGuide.epub _output/web/.
-cp _output/print/ProgrammersGuide.pdf _output/web/.
+rm -rf 10/ 12/ 14/ 2/ 3/ 4/ 5/ 6/ 7/ 9/ B/ C/ D/ F/ G/ H/ I/
+
+cp _output/print/ProgrammersGuide.epub _output/html/.
+cp _output/print/ProgrammersGuide.pdf _output/html/.
