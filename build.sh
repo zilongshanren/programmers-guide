@@ -236,7 +236,8 @@ rsync -a G/ _output/print/G/
 rsync -a H/ _output/print/H/
 rsync -a I/ _output/print/I/
 
-rm -rf 10/ 12/ 14/ 2/ 3/ 4/ 5/ 6/ 7/ 9/ B/ C/ D/ F/ G/ H/ I/
+# we really need these folders to stay for GitHub rendering to work
+#rm -rf 10/ 12/ 14/ 2/ 3/ 4/ 5/ 6/ 7/ 9/ B/ C/ D/ F/ G/ H/ I/
 
 cp _output/print/ProgrammersGuide.epub _output/html/.
 cp _output/print/ProgrammersGuide.pdf _output/html/.
