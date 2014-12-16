@@ -1,0 +1,35 @@
+site_name: Programmers Guide
+site_url: http://cocos2d-x.org/programmersguide
+site_description: The Cocos2d-x Programmers Guide
+site_description: The Cocos2d-x Programmers Guide
+site_author: The Cocos2d-x Team
+pages:
+- [index.md, 'Index']
+- [1.md, 'Ch 1: About Cocos2d-x']
+- [2.md, 'Ch 2: Basic Concepts']
+- [3.md, 'Ch 3: Sprites']
+- [4.md, 'Ch 4: Actions']
+- [5.md, 'Ch 5: Scenes']
+#- [6.md, 'Ch 6: UI']
+#- [7.md, 'Ch 7: Other Node Types']
+- [8.md, 'Ch 8: Event Dispatch']
+- [9.md, 'Ch 9: 3D']
+#- [10.md, 'Ch 10: Lua']
+#- [11.md, 'Ch 11: Services']
+#- [12.md, 'Ch 12: Physics']
+- [13.md, 'Ch 13: Audio']
+#- [14.md, 'Ch 14: Advanced Topics']
+- [A.md, 'Appx A: Prerequisites']
+- [B.md, 'Appx B: Android (Terminal) Setup']
+- [C.md, 'Appx C: Android (Eclipse) Setup']
+- [D.md, 'Appx D: iOS Setup']
+- [E.md, 'Appx E: Mac OSX Setup']
+- [F.md, 'Appx F: Linux Setup']
+- [G.md, 'Appx G: Windows Setup']
+- [H.md, 'Appx H: Windows Phone Setup']
+- [I.md, 'Appx I: New/Empty Project']
+theme: readthedocs
+theme_dir: 'theme'
+copyright: Copyright &copy; 2014, Chukong Technology
+enable_search: true
+use_directory_urls: true
