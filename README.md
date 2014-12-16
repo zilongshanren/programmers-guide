@@ -1,4 +1,4 @@
-programmers-guide
+Programmers-Guide
 =================
 
 This is the cocos2d-x programmers guide.
@@ -20,12 +20,12 @@ This is the cocos2d-x programmers guide.
 
 ## What do you need to build
 
-* mkdocs: http://www.mkdocs.org/"
-* gpp: brew install gpp"
-* Bash 4.0: brew install bash"
-* Pandoc: http://johnmacfarlane.net/pandoc/getting-started.html"
-* A LaTex Distribution: http://www.tug.org/mactex/downloading.html"
-* run: sudo /usr/local/texlive/2014/bin/universal-darwin/tlmgr install ec ecc"
+* mkdocs: http://www.mkdocs.org/
+* gpp: brew install gpp
+* Bash 4.0: brew install bash
+* Pandoc: http://johnmacfarlane.net/pandoc/getting-started.html
+* A LaTex Distribution: http://www.tug.org/mactex/downloading.html
+* run: sudo /usr/local/texlive/2014/bin/universal-darwin/tlmgr install ec ecc
 
 ## How to run/test
 
