@@ -3,40 +3,90 @@ programmers-guide
 
 This is the cocos2d-x programmers guide.
 
+
+## Directory layout
+
+* `_layout.html5` - used for `pandoc` print page layout
+* `blank.md` - a blank page that is used when building print versions
+* `build.sh` - BASH script that build web and print versions, deploys to server
+* `chapters` - markdown content and images
+* `main.css` - CSS for print version
+* `mkdocs.yml` - MKDocs configuration
+* `outline.md` - outline of what this guide covers (may be out of date)
+* `README.md` - this file :-)
+* `solarized-light.css` - CSS for print version
+* `style.css` - CSS for print version
+* `theme` - custom theme for web version
+
+## What do you need to build
+
+* mkdocs: http://www.mkdocs.org/"
+* gpp: brew install gpp"
+* Bash 4.0: brew install bash"
+* Pandoc: http://johnmacfarlane.net/pandoc/getting-started.html"
+* A LaTex Distribution: http://www.tug.org/mactex/downloading.html"
+* run: sudo /usr/local/texlive/2014/bin/universal-darwin/tlmgr install ec ecc"
+
+## How to run/test
+
+* `cd <where you cloned this repo>/programmers-guide`
+* run `mkdocs serve`
+
+Any changes made while `mkdocs serve` is running are automatically rebuilt.
+
+## How to build for deployment
+
+* `cd <where you cloned this repo>/programmers-guide`
+* run `build.sh`
+
+Content is build in `docs` and deployed to `site`. This script also builds the
+ePub and PDF versions as well as deploys out to staging (slackmoehrle.github.io)
+and http://cocos2d-x.org/programmersguide
+
+## How to add new content
+
+* via a `pull request`. Please do not add new chapters directly.
+
+## I found an error
+
+* report via GitHub issues: https://github.com/chukong/programmers-guide/issues
+
+* or clone and submit a pull request to fix it: https://github.com/chukong/programmers-guide/pulls
+
 ## Conventions used in this book
 
 * `auto` is used for creating local variables.
-* `using namespace cocos2d;` is used to shorten types. 
+* `using namespace cocos2d;` is used to shorten types.
 * each chapter has a compilable source code sample to demonstrate concepts.
 
 
-[Outline.md](https://github.com/chukong/programmers-guide/blob/master/outline.md) - outline of what the guide will cover
+[Outline.md](https://github.com/chukong/programmers-guide/blob/master/chapters/outline.md) - outline of what the guide will cover
 
 Appendices
 --------
- - [Appendix A - Prerequisites](https://github.com/chukong/programmers-guide/blob/master/A.md)
- - [Appendix B - Android with Terminal Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/B.md)
- - [Appendix C - Android with Eclipse Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/C.md)
- - [Appendix D - iOS Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/D.md)
- - [Appendix E - Mac OSX Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/E.md)
- - [Appendix F - Linux Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/F.md)
- - [Appendix G - Win32 Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/G.md)
- - [Appendix H - WP8 Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/H.md)
- - [Appendix I - Creating A New Example Project](https://github.com/chukong/programmers-guide/blob/master/I.md)
+ - [Appendix A - Prerequisites](https://github.com/chukong/programmers-guide/blob/master/chapters/A.md)
+ - [Appendix B - Android with Terminal Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/chapters/B.md)
+ - [Appendix C - Android with Eclipse Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/chapters/C.md)
+ - [Appendix D - iOS Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/chapters/D.md)
+ - [Appendix E - Mac OSX Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/chapters/E.md)
+ - [Appendix F - Linux Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/chapters/F.md)
+ - [Appendix G - Win32 Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/chapters/G.md)
+ - [Appendix H - WP8 Installation and Setup](https://github.com/chukong/programmers-guide/blob/master/chapters/H.md)
+ - [Appendix I - Creating A New Example Project](https://github.com/chukong/programmers-guide/blob/master/chapters/I.md)
 
 Chapters
 --------
- - [Chapter 01 - About](https://github.com/chukong/programmers-guide/blob/master/1.md)
- - [Chapter 02 - Basic concepts and essentials](https://github.com/chukong/programmers-guide/blob/master/2.md)
- - [Chapter 03 - Sprites](https://github.com/chukong/programmers-guide/blob/master/3.md)
- - [Chapter 04 - Actions](https://github.com/chukong/programmers-guide/blob/master/4.md)
- - [Chapter 05 - Building and Transitioning Scenes](https://github.com/chukong/programmers-guide/blob/master/5.md)
- - [Chapter 06 - UI](https://github.com/chukong/programmers-guide/blob/master/6.md)
- - [Chapter 07 - Other Node Types](https://github.com/chukong/programmers-guide/blob/master/7.md)
- - [Chapter 08 - Event Dispatcher](https://github.com/chukong/programmers-guide/blob/master/8.md)
- - [Chapter 09 - 3D](https://github.com/chukong/programmers-guide/blob/master/9.md)
- - [Chapter 10 - Lua](https://github.com/chukong/programmers-guide/blob/master/10.md)
- - [Chapter 11 - Services](https://github.com/chukong/programmers-guide/blob/master/11.md)
- - [Chapter 12 - Physics](https://github.com/chukong/programmers-guide/blob/master/12.md)
- - [Chapter 13 - Audio](https://github.com/chukong/programmers-guide/blob/master/13.md)
- - [Chapter 14 - Advanced Topics](https://github.com/chukong/programmers-guide/blob/master/14.md)
+ - [Chapter 01 - About](https://github.com/chukong/programmers-guide/blob/master/chapters/1.md)
+ - [Chapter 02 - Basic concepts and essentials](https://github.com/chukong/programmers-guide/blob/master/chapters/2.md)
+ - [Chapter 03 - Sprites](https://github.com/chukong/programmers-guide/blob/master/chapters/3.md)
+ - [Chapter 04 - Actions](https://github.com/chukong/programmers-guide/blob/master/chapters/4.md)
+ - [Chapter 05 - Building and Transitioning Scenes](https://github.com/chukong/programmers-guide/blob/master/chapters/5.md)
+ - [Chapter 06 - UI](https://github.com/chukong/programmers-guide/blob/master/chapters/6.md)
+ - [Chapter 07 - Other Node Types](https://github.com/chukong/programmers-guide/blob/master/chapters/7.md)
+ - [Chapter 08 - Event Dispatcher](https://github.com/chukong/programmers-guide/blob/master/chapters/8.md)
+ - [Chapter 09 - 3D](https://github.com/chukong/programmers-guide/blob/master/chapters/9.md)
+ - [Chapter 10 - Lua](https://github.com/chukong/programmers-guide/blob/master/chapters/10.md)
+ - [Chapter 11 - Services](https://github.com/chukong/programmers-guide/blob/master/chapters/11.md)
+ - [Chapter 12 - Physics](https://github.com/chukong/programmers-guide/blob/master/chapters/12.md)
+ - [Chapter 13 - Audio](https://github.com/chukong/programmers-guide/blob/master/chapters/13.md)
+ - [Chapter 14 - Advanced Topics](https://github.com/chukong/programmers-guide/blob/master/chapters/14.md)

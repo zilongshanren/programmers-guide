@@ -1,6 +1,7 @@
 # HTML5 and build programmer guide objects
-_output
-_output/html
+docs
+site
+print
 ProgrammersGuide.epub
 ProgrammersGuide.pdf
 
