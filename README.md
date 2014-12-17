@@ -18,7 +18,7 @@ This is the cocos2d-x programmers guide.
 * `style.css` - CSS for print version
 * `theme` - custom theme for web version
 
-## What do you need to build
+## What do you need to build for OS X?
 
 * mkdocs: http://www.mkdocs.org/
 * gpp: brew install gpp http://brew.sh/
