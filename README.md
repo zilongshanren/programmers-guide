@@ -21,7 +21,7 @@ This is the cocos2d-x programmers guide.
 ## What do you need to build
 
 * mkdocs: http://www.mkdocs.org/
-* gpp: brew install gpp
+* gpp: brew install gpp http://brew.sh/
 * Bash 4.0: brew install bash
 * Pandoc: http://johnmacfarlane.net/pandoc/getting-started.html
 * A LaTex Distribution: http://www.tug.org/mactex/downloading.html
@@ -45,12 +45,14 @@ and http://cocos2d-x.org/programmersguide
 
 ## How to add new content
 
-* via a `pull request`. Please do not add new chapters directly.
+* via a `pull request`. Please do not edit chapters directly.
+* If you are creating a new chapter, please dont't make it feel and sound like an API Reference. This is a guide suited for new users (even though advanced users will benefit too). Please tell a story about your content. We want to make this engage the user. If in doubt. Read Chapter 2 and notice it feels like a chapter in a book.
+* Contact me via e-mail or on the forums to discuss what you want to add, edit, etc.
+
 
 ## I found an error
 
 * report via GitHub issues: https://github.com/chukong/programmers-guide/issues
-
 * or clone and submit a pull request to fix it: https://github.com/chukong/programmers-guide/pulls
 
 ## Conventions used in this book
