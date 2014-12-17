@@ -62,7 +62,7 @@ and http://cocos2d-x.org/programmersguide
 * each chapter has a compilable source code sample to demonstrate concepts.
 
 
-[Outline.md](https://github.com/chukong/programmers-guide/blob/master/chapters/outline.md) - outline of what the guide will cover
+[Outline.md](https://github.com/chukong/programmers-guide/blob/master/chapters/outline.md) - outline of what the guide will cover (may be out of date)
 
 Appendices
 --------
