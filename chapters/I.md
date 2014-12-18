@@ -12,7 +12,7 @@
 		$ source ~/.bash_profile
 		$ cocos new MyGame -p com.MyCompany.MyGame -l cpp -d ~/MyCompany
 
-![](I-web/1.png "")
+![](I-img/1.png "")
 
 * `MyGame`: name of your project
 * `-p com.MyCompany.MyGame`: package name for android
@@ -24,7 +24,7 @@
 * `-s`: directory of the new project. This could be an absolute path or a relative path.
 * `-p`: which platform to run on. Options are `ios`,`android`,`win32`,`mac` and `linux`.
 
-![](I-web/2.png "")
+![](I-img/2.png "")
 
 (Note: You are a tmux user, you should add `reattach-to-user-namespace` before the
 command `cocos`. For more information, please refer to

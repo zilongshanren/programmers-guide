@@ -17,11 +17,11 @@
 
 ## Prerequisite
 * Download Cocos2d-x and unzip it. (maybe: ~/)
-![](B-web/1.png "")
+![](B-img/1.png "")
 
-![](B-web/2.png "")
+![](B-img/2.png "")
 
-![](B-web/3.png "")
+![](B-img/3.png "")
 
 * Download the JDK
 
@@ -66,11 +66,11 @@ this non-trival difference.
 
 * On win32 systems, close the command line windows and restart it.
 
-![](B-web/setuppy01.png "")
+![](B-img/setuppy01.png "")
 
-![](B-web/setuppy02.png "")
+![](B-img/setuppy02.png "")
 
-![](B-web/setuppy03.png "")
+![](B-img/setuppy03.png "")
 
 ## Use `android-build.py` to build cocos2d-x samples
 
@@ -83,7 +83,7 @@ this non-trival difference.
 
 	to see what targets are available.
 
-![](B-web/android-list-targets1.png "")
+![](B-img/android-list-targets1.png "")
 
 * execute:
 
@@ -91,7 +91,7 @@ this non-trival difference.
 
 * everything should build successfully:
 
-![](B-web/buildsuccess.png "")
+![](B-img/buildsuccess.png "")
 
 ## How to deploy it on your Android phone via command line
 

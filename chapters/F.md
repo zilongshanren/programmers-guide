@@ -43,7 +43,7 @@ Run `cmake` to generate `makefile`:
 When `cmake` returns correctly, many files & folders will be generated in  
 `coocs2dx_root/build/linux-build`
 
-![](F-web/1.png "")
+![](F-img/1.png "")
 
 ## Compile
 

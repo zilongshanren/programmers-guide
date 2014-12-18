@@ -9,33 +9,33 @@
 ## Prerequisite
 * Download Cocos2d-x and unzip it. (maybe: ~/)
 
-![](H-web/1.png "")
+![](H-img/1.png "")
 
 * Register to be a Windows Phone Developer [http://msdn.microsoft.com/en-us/library/windowsphone/help/jj206719(v=vs.105](http://msdn.microsoft.com/en-us/library/windowsphone/help/jj206719(v=vs.105)
 
 ## Compile and Run the TestCpp Project
 * Open `cocos2d-wp8.vc2012.sln` in the `build` folder
 
-![](H-web/2.png "")
+![](H-img/2.png "")
 
 * Right click the `cpp-tests` project, and select `Set as StartUp Project`.
 
-![](H-web/3.png "")
+![](H-img/3.png "")
 
 * Select `Emulator` or a `Device` to run the project on. If you sect `Device`
 you need to connect your phone device using usb. Compile and run the `TestCpp`
 project.
 
-![](H-web/4.png "")
+![](H-img/4.png "")
 
 ## How to debug in project
 * Right click `cpp-tests`, select `Properties`, in `Debug`, select `debug` target.
 
-![](H-web/5.png "")
+![](H-img/5.png "")
 
 * If you select `Managed Only` in `UI Task`, it's to debug c# code in `cpp-tests`.
 If you select `Native Only`, it's to debug c++ code in `cpp-testsComponent`.
 If you select `Native Only` and want to use `CCLog` function, right click
 `cpp-testsComponent` and define `COCOS2D_DEBUG=1` in `Preprocessor Definitions`
 
-![](H-web/6.png "")
+![](H-img/6.png "")

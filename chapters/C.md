@@ -15,12 +15,12 @@
 * Choose `Existing Android Code Into Workspace` from the pop up dialog and Click
 `Next`.
 
-![](C-web/image2.png)
+![](C-img/image2.png)
 
 * Click the `Browse...` button to choose the directory of Cpp-Tests' `proj.android`
 and Click Ok.
 
-![](C-web/image3.png)
+![](C-img/image3.png)
 
 * Click Finish.
 
@@ -28,7 +28,7 @@ and Click Ok.
 * Same steps as above only using the path of the libcocos2dx project is
 `[your own game project folder]/cocos/2d/platform/android/java`.
 
-![](C-web/image5.png)
+![](C-img/image5.png)
 
 ## Build and Run the Android Project
 * Connect your Android phone with `USB remote debugging` option enabled.
@@ -38,4 +38,4 @@ drivers for your specific phone)
 
 * Right click on the project and choose `Run as...` -> `Android Application`.
 
-![](C-web/image6.png)
+![](C-img/image6.png)
