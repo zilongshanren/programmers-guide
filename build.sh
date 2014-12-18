@@ -14,6 +14,7 @@ echo "To Do: Be able to insert a page break at the end of each chapter. right no
 echo ""
 
 ### Define variables that we need for this script
+### These are the chapters are are currently done. Add chapters here.
 chapters=('blank' 'index' '1' '2' '3' '4' '5' '8' '9' '13' 'A' 'B'
 'C' 'D' 'E' 'F' 'G' 'H' 'I')
 
@@ -24,11 +25,17 @@ shopt -s globstar
 ### is looking for.
 echo "building the html version with mkdocs..."
 echo "output is in site/..."
-echo "copying resources to docs..."
+echo "copying resources to respective directories..."
 mkdir -p docs
 mkdir -p print
 rsync -a chapters/*-web* docs/
 rsync -a chapters/*-print* print/
+for i in ${chapters[@]}; do
+  mv docs/${i}-web/ docs/${i}-img/
+  mv print/${i}-print/ print/${i}-img/
+done
+
+
 
 ### Pre-process the markdown files
 ### for the web = -DWEB
@@ -43,71 +50,3 @@ rsync -a chapters/*-print* print/
 ### Now we can use MKDocs to build the static content
 echo "MKDocs Build..."
 mkdocs build
-
-### build the ePub and PDF versions
-echo "building the ePUB and PDF versions..."
-cp solarized-light.css main.css style.css _layout.html5 print/.
-
-for i in ${chapters[@]}; do
-  pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o print/${i}.html print/${i}.md
-done
-
-#mv print/title.html print/intro.html #Silly this is because of a misnamed file I should fix.
-
-echo "building the epub version..."
-cd print/
-pandoc -S --epub-stylesheet=style.css -o ProgrammersGuide.epub \
-index.html \
-blank.html \
-1.html \
-blank.html \
-2.html \
-blank.html \
-3.html \
-blank.html \
-4.html \
-blank.html \
-5.html \
-#blank.html \
-#6.html \
-#blank.html \
-#7.html \
-blank.html \
-8.html \
-blank.html \
-9.html \
-#blank.html \
-#10.html \
-#blank.html \
-#11.html \
-#blank.html \
-#12.html \
-blank.html \
-13.html \
-#blank.html \
-#14.html \
-blank.html \
-A.html \
-blank.html \
-B.html \
-blank.html \
-C.html \
-blank.html \
-D.html \
-blank.html \
-E.html \
-blank.html \
-F.html \
-blank.html \
-G.html \
-blank.html \
-H.html \
-blank.html \
-I.html \
-blank.html
-
-### Building the PDF version
-echo "building the PDF version..."
-pandoc -s -o ProgrammersGuide.pdf ProgrammersGuide.epub
-cd ..
-cp print/ProgrammersGuide.pdf print/ProgrammersGuide.epub site/.
