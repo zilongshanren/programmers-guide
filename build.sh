@@ -66,6 +66,7 @@ done
 
 ### Now we can use MKDocs to build the static content
 echo "MKDocs Build..."
+rm -rf site/
 mkdocs build
 
 ### build the ePub and PDF versions
@@ -142,4 +143,7 @@ cd ../slackmoehrle.github.io
 git add .
 git commit -m 'published automatically from script'
 git push
-cd ..
+cd ../programmers-guide
+
+## clean up for next time
+rm -rf docs/ print/
