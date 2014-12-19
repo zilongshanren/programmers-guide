@@ -15,8 +15,13 @@ echo ""
 
 ### Define variables that we need for this script
 ### These are the chapters are are currently done. Add chapters here.
-chapters=('blank' 'index' '1' '2' '3' '4' '5' '8' '9' '13' 'A' 'B'
-'C' 'D' 'E' 'F' 'G' 'H' 'I')
+allDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
+'12' '13' '14' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I')
+misc=('blank' 'index')
+chaptersWithFolders=('2' '3' '4' '5' '9' 'B' 'C' 'D' 'F' 'G' 'H' 'I')
+chaptersWithOutFolders=('1' '8' '9' '13' 'A' 'E')
+
+foundDirs=()
 
 ### Turn on globbing (BASH 4 required)
 shopt -s globstar
@@ -28,13 +33,25 @@ echo "output is in site/..."
 echo "copying resources to respective directories..."
 mkdir -p docs
 mkdir -p print
-rsync -a chapters/*-web* docs/
-rsync -a chapters/*-print* print/
-for i in ${chapters[@]}; do
-  mv docs/${i}-web/ docs/${i}-img/
-  mv print/${i}-print/ print/${i}-img/
+
+for i in ${chaptersWithFolders[@]}; do
+  rsync -a chapters/${i}-web docs/
+  rsync -a chapters/${i}-print print/
+  mv docs/${i}-web docs/${i}-img
+  mv print/${i}-print print/${i}-img
+  cp chapters/${i}.md docs/${i}.md
+  cp chapters/${i}.md print/${i}.md
 done
 
+for i in ${chaptersWithOutFolders[@]}; do
+  cp chapters/${i}.md docs/${i}.md
+  cp chapters/${i}.md print/${i}.md
+done
+
+for i in ${misc[@]}; do
+  cp chapters/${i}.md docs/${i}.md
+  cp chapters/${i}.md print/${i}.md
+done
 
 
 ### Pre-process the markdown files
@@ -50,3 +67,79 @@ done
 ### Now we can use MKDocs to build the static content
 echo "MKDocs Build..."
 mkdocs build
+
+### build the ePub and PDF versions
+echo "building the ePUB and PDF versions..."
+cp solarized-light.css main.css style.css _layout.html5 print/.
+
+for i in ${allDocuments[@]}; do
+  pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o print/${i}.html print/${i}.md
+done
+
+#mv print/title.html print/intro.html #Silly this is because of a misnamed file I should fix.
+
+echo "building the epub version..."
+cd print/
+pandoc -S --epub-stylesheet=style.css -o ProgrammersGuide.epub \
+index.html \
+blank.html \
+1.html \
+blank.html \
+2.html \
+blank.html \
+3.html \
+blank.html \
+4.html \
+blank.html \
+5.html \
+#blank.html \
+#6.html \
+#blank.html \
+#7.html \
+blank.html \
+8.html \
+blank.html \
+9.html \
+#blank.html \
+#10.html \
+#blank.html \
+#11.html \
+#blank.html \
+#12.html \
+blank.html \
+13.html \
+#blank.html \
+#14.html \
+blank.html \
+A.html \
+blank.html \
+B.html \
+blank.html \
+C.html \
+blank.html \
+D.html \
+blank.html \
+E.html \
+blank.html \
+F.html \
+blank.html \
+G.html \
+blank.html \
+H.html \
+blank.html \
+I.html \
+blank.html
+
+### Building the PDF version
+echo "building the PDF version..."
+pandoc -s -o ProgrammersGuide.pdf ProgrammersGuide.epub
+cd ..
+cp print/ProgrammersGuide.pdf print/ProgrammersGuide.epub site/.
+
+### Copy out to slackmoehrle.github.io
+rsync -a site/ ../slackmoehrle.github.io/
+cd ../slackmoehrle.github.io
+git add .
+git commit -m 'published automatically from script'
+git push
+cd ..
