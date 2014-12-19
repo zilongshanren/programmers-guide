@@ -31,6 +31,7 @@ shopt -s globstar
 echo "building the html version with mkdocs..."
 echo "output is in site/..."
 echo "copying resources to respective directories..."
+rm -rf docs/
 mkdir -p docs
 mkdir -p print
 
@@ -146,4 +147,4 @@ git push
 cd ../programmers-guide
 
 ## clean up for next time
-rm -rf docs/ print/
+rm -rf print/
