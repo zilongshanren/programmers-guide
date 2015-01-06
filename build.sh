@@ -79,7 +79,6 @@ for i in ${allChapters[@]}; do
   rsync -a theme/img site/${i}/
 done
 
-
 ### build the ePub and PDF versions
 echo "building the ePUB and PDF versions..."
 cp solarized-light.css main.css style.css _layout.html5 print/.
