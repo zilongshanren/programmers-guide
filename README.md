@@ -1,7 +1,7 @@
 Programmers-Guide
 =================
 
-This is the cocos2d-x programmers guide.
+This is the Cocos2d-x programmers guide.
 
 
 ## Directory layout
