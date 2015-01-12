@@ -28,7 +28,7 @@ This is the Cocos2d-x programmers guide. It is licensed under the
 * A LaTex Distribution: http://www.tug.org/mactex/downloading.html
 * run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr update --self
 * run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr  install collection-fontsrecommended
-* run: sudo /usr/local/texlive/2014/bin/universal-darwin/tlmgr install ec ecc
+* run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr install ec ecc
 
 ## How to run/test
 
