@@ -1,7 +1,8 @@
 Programmers-Guide
 =================
 
-This is the Cocos2d-x programmers guide.
+This is the Cocos2d-x programmers guide. It is licensed under the
+`Creative Commons BY-SA` license. You can find it [here]( https://creativecommons.org/licenses/by-sa/4.0/)
 
 
 ## Directory layout
@@ -25,6 +26,8 @@ This is the Cocos2d-x programmers guide.
 * Bash 4.0: brew install bash
 * Pandoc: http://johnmacfarlane.net/pandoc/getting-started.html
 * A LaTex Distribution: http://www.tug.org/mactex/downloading.html
+* run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr update --self
+* run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr  install collection-fontsrecommended
 * run: sudo /usr/local/texlive/2014/bin/universal-darwin/tlmgr install ec ecc
 
 ## How to run/test
