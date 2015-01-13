@@ -22,7 +22,7 @@ allDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
 allChapters=('1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
 '12' '13' '14' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I')
 misc=('blank' 'index')
-chaptersWithFolders=('2' '3' '4' '5' '9' '12' 'B' 'C' 'D' 'F' 'G' 'H' 'I')
+chaptersWithFolders=('2' '3' '4' '5' '6' '9' '12' 'B' 'C' 'D' 'F' 'G' 'H' 'I')
 chaptersWithOutFolders=('1' '8' '9' '13' 'A' 'E')
 
 foundDirs=()
@@ -105,8 +105,8 @@ blank.html \
 4.html \
 blank.html \
 5.html \
-#blank.html \
-#6.html \
+blank.html \
+6.html \
 #blank.html \
 #7.html \
 blank.html \
