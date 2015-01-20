@@ -5,7 +5,7 @@
 
 * Cocos2d-x v3.3 [https://cocos2d-x.org/download](https://cocos2d-x.org/download "cocos2d-x")
 
-* Xcode 4.6.2+ [https://developer.apple.com/downloads/index.action](https://developer.apple.com/downloads/index.action)
+* Xcode 5.1.1+ [https://developer.apple.com/downloads/index.action](https://developer.apple.com/downloads/index.action)
 
 * iOS 5.0+
 

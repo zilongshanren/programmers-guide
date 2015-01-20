@@ -1,7 +1,7 @@
 # Appendix B: Android (Terminal) Installation and Setup
 
 ## Environment Requirements
-* A Supported OS (Ubuntu 12.10+, OS X 10.7+, Windows 7+)
+* A Supported OS (Ubuntu 12.10+, OS X 10.8+, Windows 7+)
 
 * Cocos2d-x v3.3 [https://cocos2d-x.org/download](https://cocos2d-x.org/download "cocos2d-x")
 
@@ -9,7 +9,7 @@
 
 * Android SDK [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
 
-* NDK r9d+ [https://developer.android.com/tools/sdk/ndk/index.html](https://developer.android.com/tools/sdk/ndk/index.html)
+* NDK r10c [https://developer.android.com/tools/sdk/ndk/index.html](https://developer.android.com/tools/sdk/ndk/index.html)
 
 * Apache Ant [http://ant.apache.org/bindownload.cgi](http://ant.apache.org/bindownload.cgi)
 

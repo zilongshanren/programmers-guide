@@ -1,7 +1,7 @@
 # Appendix C: Android (Eclipse) Installation and Setup
 
 ## Prerequisite
-* Complete steps in Appendix A
+* Complete steps in Appendix B
 
 * Eclipse ADT Bundle [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
 
