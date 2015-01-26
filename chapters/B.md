@@ -7,64 +7,137 @@
 
 * JDK/SDK 1.6+ [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
-* Android SDK [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
+* Android Studio Bundle [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
 
 * NDK r10c [https://developer.android.com/tools/sdk/ndk/index.html](https://developer.android.com/tools/sdk/ndk/index.html)
 
 * Apache Ant [http://ant.apache.org/bindownload.cgi](http://ant.apache.org/bindownload.cgi)
 
-* Python 2.7.5
+* Python 2.7.5 [https://python.org/downloads](https://python.org/downloads)
 
 ## Prerequisite
-* Download Cocos2d-x and unzip it. (maybe: ~/)
+* Download *Cocos2d-x*
+
+* Download the *JDK*
+
+* Download the *Android Studio Bundle*
+
+* Download the *NDK*
+
+* Download *Apache Ant*
+
+* Download *Python*
+
+## Windows Instructions
+* unzip Cocos2d-x
+![](B-img/win-step1.png "")
+
+![](B-img/win-step2.png "")
+
+![](B-img/win-step3.png "")
+
+* install the JDK and verify it works
+
+![](B-img/win-step4.png "")
+
+* install the *Android Studio Bundle* taking note of where you specify the
+_Android SDK Installation Location_
+
+![](B-img/win-step5.png "")
+
+* unzip the Android NDK to the same location as the _Android SDK Installation Location_
+used from above.
+
+![](B-img/win-step6.png "")
+
+* extract *Apache Ant* and place the entire folder where you wish to keep it.
+Take note of where you placed it.
+
+* install *Python* and take note of where you placed it.
+
+* add the paths for *Apache Ant* and *Python* to your PATH variable.
+
+![](B-img/win-step7.png "")
+
+* at the same time create a new variable called: `JAVA_HOME` and give it the
+path to where you installed the JDK above.
+
+![](B-img/win-step8.png "")
+
+* reboot
+
+* now, test your environment before continuing. Launch a _command prompt_ and execute:
+
+> ant
+
+> python
+
+![](B-img/win-step9.png "")
+
+* if everything works it is time to run `setup.py` to configure your Android
+development environment. This will set the necessary environment variables needed.
+If you haven't configured this environment before, you will be prompted to enter
+paths for variables that are not found. You run `setup.py` from the directory
+cocos2d-x is in.
+
+> setup.py
+
+* enter the paths that you are asked for.
+
+* restart the `cmd` prompt for these settings to take effect
+
+* to build `cpp-tests` `cd` to where you are keeping cocos2d-x and enter the
+`build` directory
+
+* run `android list targets` from `sdk/tools` to see what targets you have
+available to build for:
+
+![](B-img/win-step10.png "")
+
+* run: `python android-build.py -p <a target from above> cpp-tests`, using the
+screenshot above, as an example, run:
+
+> python android-build.py -p 21 cpp-tests
+
+* this will take a while and you will see a lot of source files compiling.
+
+![](B-img/win-step11.png "")
+
+* once complete you will get a `success` message!
+
+![](B-img/win-step12.png "")
+
+
+## OS X, Linux Instructions
+* unzip Cocos2d-x
 ![](B-img/1.png "")
 
 ![](B-img/2.png "")
 
 ![](B-img/3.png "")
 
-* Download the JDK
+* install the JDK if your platform requires it.
 
-* Download the SDK
-
-* Download the NDK
-
-* After downloading them, unzip the SDK and NDK to the same root location.
+* unzip the Android SDK and NDK to the same root location.
 (maybe: ~/AndroidDev)
 
-* Verify that `Python 2.7` is installed and is accessible.
+* verify that `Python 2.7` is installed and is accessible.
 
-* Install `Apache Ant` and verify that it works.
+* install `Apache Ant` and verify that it works.
 
-* Run `setup.py` to configure your Android development environment. This will
+* run: `setup.py` to configure your Android development environment. This will
 set the necessary environment variables needed. If you haven't configured this
 environment before, you will be prompted to enter paths for variables that are
 not found.
 
-** Caution: You must *not* use the `~` sign. Use the full path to your *home*
+** *caution*: You must *not* use the `~` sign. Use the full path to your *home*
 directory. Otherwise, the scripts will fail due to error path value.
 
-** `*COCOS2D_CONSOLE_ROOT*` environment variable to point to the *bin* directory
-under *~/cocos2d-x/tools/cocos2d-console* directory.
+* in your `cocos2d-x` directory run` python setup.py`
 
-** `*NDK_ROOT*` environment variable to point to the location of where you put
-the NDK. (i.e android-ndk-r9d/)
+* after setting the environment variables run:
 
-** `*ANDROID_SDK_ROOT*` environment variable to point to the location of where
-you put the `adt-bundle`.  Example `/Users/<your username>/AndroidDev/adt-bundle-mac-x86_64-20130522/sdk/`.
-The adt-bundle-mac-x86_64-xxxx, the xxxx number maybe different. So please note
-this non-trival difference.
-
-** `*ANT_ROOT*` environment variable to point to the location of where you put
-`apache-ant-x.x.x`.  The `apache-ant-x.x.x`, the x.x.x number maybe different.
-
-* In your `cocos2d-x` directory run` python setup.py`
-
-* On unix systems, now issue the following commands:
-
-		source ~/.bash_profile
-
-* On win32 systems, close the command line windows and restart it.
+> source ~/.bash_profile
 
 ![](B-img/setuppy01.png "")
 
@@ -72,16 +145,12 @@ this non-trival difference.
 
 ![](B-img/setuppy03.png "")
 
-## Use `android-build.py` to build cocos2d-x samples
-
-* Change your directory to the where the `android-build.py` script is located.
+* change your directory to the where the `android-build.py` script is located.
 (usually `cocos2d-x/build`)
 
-* run:
+* to see what targets are available. run:
 
-		android list targets
-
-	to see what targets are available.
+> android list targets
 
 ![](B-img/android-list-targets1.png "")
 
@@ -95,11 +164,11 @@ this non-trival difference.
 
 ## How to deploy it on your Android phone via command line
 
-* Enable *USB Debugging* [http://stackoverflow.com/questions/16707137/how-to-find-and-turn-on-usb-debugging-mode-on-nexus-4]
+* enable *USB Debugging* [http://stackoverflow.com/questions/16707137/how-to-find-and-turn-on-usb-debugging-mode-on-nexus-4]
 (http://stackoverflow.com/questions/16707137/how-to-find-and-turn-on-usb-debugging-mode-on-nexus-4)
 on your phone and then connect your phone via USB.
 
-* Change your directory to the the *bin* directory of your android project
+* change your directory to the the *bin* directory of your android project
 
-* Use **adb** to install the apk to your android phone:
+* use **adb** to install the apk to your android phone:
 		adb install TestsDemo-debug.apk
