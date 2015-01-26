@@ -68,9 +68,9 @@ path to where you installed the JDK above.
 
 * now, test your environment before continuing. Launch a _command prompt_ and execute:
 
-    > $ ant
+		> $ ant
 
-    > $ python
+		> $ python
 
 ![](B-img/win-step9.png "")
 
@@ -80,7 +80,7 @@ If you haven't configured this environment before, you will be prompted to enter
 paths for variables that are not found. You run `setup.py` from the directory
 cocos2d-x is in.
 
-    > $ setup.py
+		> $ setup.py
 
 * enter the paths that you are asked for.
 
@@ -97,7 +97,7 @@ available to build for:
 * run: `python android-build.py -p <a target from above> cpp-tests`, using the
 screenshot above, as an example, run:
 
-    > $ python android-build.py -p 21 cpp-tests
+		> $ python android-build.py -p 21 cpp-tests
 
 * this will take a while and you will see a lot of source files compiling.
 
@@ -138,7 +138,7 @@ directory. Otherwise, the scripts will fail due to error path value.
 
 * after setting the environment variables run:
 
-    > $ source ~/.bash_profile
+		> $ source ~/.bash_profile
 
 ![](B-img/setuppy01.png "")
 
@@ -151,7 +151,7 @@ directory. Otherwise, the scripts will fail due to error path value.
 
 * to see what targets are available. run:
 
-    > $ android list targets
+		> $ android list targets
 
 ![](B-img/android-list-targets1.png "")
 
