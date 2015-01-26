@@ -1,6 +1,6 @@
 % Cocos2d-x Programmers Guide v3.3
 % The Cocos2d-x Team
-% v2015.01.21
+% v2015.01.27
 
 [PDF Version](http://cocos2d-x.org/programmersguide/ProgrammersGuide.pdf)
 <br /><br />
