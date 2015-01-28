@@ -10,7 +10,7 @@ pages:
 - [3.md, 'Ch 3: Sprites']
 - [4.md, 'Ch 4: Actions']
 - [5.md, 'Ch 5: Scenes']
-#- [6.md, 'Ch 6: UI']
+- [6.md, 'Ch 6: UI']
 #- [7.md, 'Ch 7: Other Node Types']
 - [8.md, 'Ch 8: Event Dispatch']
 - [9.md, 'Ch 9: 3D']
