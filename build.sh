@@ -23,7 +23,7 @@ allChapters=('1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
 '12' '13' '14' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I')
 misc=('blank' 'index')
 chaptersWithFolders=('2' '3' '4' '5' '6' '7' '9' '12' '14' 'B' 'C' 'D' 'F' 'G' 'H' 'I')
-chaptersWithOutFolders=('1' '8' '13' 'A' 'E')
+chaptersWithOutFolders=('1' '8' '10' '11' '13' 'A' 'E')
 
 foundDirs=()
 
@@ -113,10 +113,10 @@ blank.html \
 8.html \
 blank.html \
 9.html \
-#blank.html \
-#10.html \
-#blank.html \
-#11.html \
+blank.html \
+10.html \
+blank.html \
+11.html \
 blank.html \
 12.html \
 blank.html \
