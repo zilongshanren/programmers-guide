@@ -8,10 +8,9 @@
 #### __Special Thanks:__ To our users! Without you there is no reason to even write this guide.
 
 ##### [PDF Version](http://cocos2d-x.org/programmersguide/ProgrammersGuide.pdf)
-<br /><br />
+
 ##### [eBook Version](http://cocos2d-x.org/programmersguide/ProgrammersGuide.epub)
-<br /><br />
+
 ##### Please provide feedback for this guide on [GitHub](https://github.com/chukong/programmers-guide)
-<br /><br />
+
 ##### You can download the samples for this guide on [GitHub](https://github.com/chukong/programmers-guide-samples)
-<br /><br />
