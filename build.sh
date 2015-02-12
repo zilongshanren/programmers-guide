@@ -91,7 +91,7 @@ done
 
 #mv print/title.html print/intro.html #Silly this is because of a misnamed file I should fix.
 
-echo "building the epub version..."
+echo "building the ePUB version..."
 cd print/
 pandoc -S --epub-stylesheet=style.css -o ProgrammersGuide.epub \
 index.html \
@@ -145,7 +145,8 @@ blank.html
 
 ### Building the PDF version
 echo "building the PDF version..."
-pandoc -s -o ProgrammersGuide.pdf ProgrammersGuide.epub
+#pandoc -s -o --latex-engine=xelatex ProgrammersGuide.pdf ProgrammersGuide.epub
+pandoc -s ProgrammersGuide.epub -o ProgrammersGuide.pdf --latex-engine=xelatex
 cd ..
 cp print/ProgrammersGuide.pdf print/ProgrammersGuide.epub site/.
 
