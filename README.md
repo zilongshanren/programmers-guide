@@ -44,7 +44,7 @@ Any changes made while `mkdocs serve` is running are automatically rebuilt.
 
 Content is build in `docs` and deployed to `site`. This script also builds the
 ePub and PDF versions as well as deploys out to staging (slackmoehrle.github.io)
-and http://cocos2d-x.org/programmersguide
+and http://www.cocos2d-x.org/programmersguide
 
 ## How to add new content
 

@@ -3,7 +3,7 @@
 ## Environment Requirements
 * A Supported OS (Ubuntu 12.10+, OS X 10.8+, Windows 7+)
 
-* Cocos2d-x v3.3 [https://cocos2d-x.org/download](https://cocos2d-x.org/download "cocos2d-x")
+* Cocos2d-x v3.3 [https://cocos2d-x.org/download](https://cocos2d-x.org/download "Cocos2d-x")
 
 * JDK/SDK 1.6+ [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
@@ -78,7 +78,7 @@ path to where you installed the JDK above.
 development environment. This will set the necessary environment variables needed.
 If you haven't configured this environment before, you will be prompted to enter
 paths for variables that are not found. You run `setup.py` from the directory
-cocos2d-x is in.
+Cocos2d-x is in.
 
 		> $ setup.py
 
@@ -86,7 +86,7 @@ cocos2d-x is in.
 
 * restart the `cmd` prompt for these settings to take effect
 
-* to build `cpp-tests` `cd` to where you are keeping cocos2d-x and enter the
+* to build `cpp-tests` `cd` to where you are keeping Cocos2d-x and enter the
 `build` directory
 
 * run `android list targets` from `sdk/tools` to see what targets you have
@@ -134,7 +134,7 @@ not found.
 ** *caution*: You must *not* use the `~` sign. Use the full path to your *home*
 directory. Otherwise, the scripts will fail due to error path value.
 
-* in your `cocos2d-x` directory run` python setup.py`
+* in your `Cocos2d-x` directory run` python setup.py`
 
 * after setting the environment variables run:
 
@@ -147,7 +147,7 @@ directory. Otherwise, the scripts will fail due to error path value.
 ![](B-img/setuppy03.png "")
 
 * change your directory to the where the `android-build.py` script is located.
-(usually `cocos2d-x/build`)
+(usually `Cocos2d-x/build`)
 
 * to see what targets are available. run:
 

@@ -5,7 +5,7 @@
 
 1. About Cocos2d-x
     * A very brief history:
-        * Launched in July 2010, cocos2d-x is the best open-source game engine available.
+        * Launched in July 2010, Cocos2d-x is the best open-source game engine available.
         * Versioning information (i.e C++, JS, Lua, not related to Cocos2d-iphone, etc)
          * Cocos2d-x comes in a variety of flavors:
              * c++ [c++](http://www.cocos2d-x.org/products#cocos2dx)

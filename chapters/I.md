@@ -7,7 +7,7 @@
 
 ### OS X and Linux users.
 
-		$ cd cocos2d-x
+		$ cd Cocos2d-x
 		$ ./setup.py
 		$ source ~/.bash_profile
 		$ cocos new MyGame -p com.MyCompany.MyGame -l cpp -d ~/MyCompany
@@ -34,7 +34,7 @@ more information.)
 You can run `cocos run --help` for more detail information.
 
 ### Win32 Users
-using `cmd` as your shell: `cd cocos2d-x-3.1.1\tools\cocos2d-console\bin` or to
+using `cmd` as your shell: `cd Cocos2d-x-3.1.1\tools\cocos2d-console\bin` or to
 wherever you have this on your filesystem
 
 		`cocos.py new YourGameTitle -p com.yourcompany.gametitle -l cpp -d C:\YourGameTitle`

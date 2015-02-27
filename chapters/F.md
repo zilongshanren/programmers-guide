@@ -2,12 +2,12 @@
 
 ## Environment Requirements
 * Ubuntu 12.10+
-* Cocos2d-x v3.3 [https://cocos2d-x.org/download](https://cocos2d-x.org/download "cocos2d-x")
+* Cocos2d-x v3.3 [https://cocos2d-x.org/download](https://cocos2d-x.org/download "Cocos2d-x")
 * CMake 2.6+
 * gcc 4.9+
 
 ## Prerequisite
-Download cocos2d-x and unzip it. (maybe: ~/)
+Download Cocos2d-x and unzip it. (maybe: ~/)
 
 Install dependencies. The dependencies are:
 
