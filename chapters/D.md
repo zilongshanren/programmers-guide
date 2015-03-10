@@ -26,8 +26,8 @@ and unzip it:
 * Choose `cpp-tests iOS` from targets drop-down box  
 * Click `run` to compile and run `cpp-tests`
 
-## Running on an IOS Device
-* In order to run on IOS Device an IOS Developer Program membership is needed.
+## Running on an iOS Device
+* In order to run on iOS Device an iOS Developer Program membership is needed.
 You can purchase one from Apple: [https://developer.apple.com/programs/ios/](https://developer.apple.com/programs/ios/)
 . The steps to run on iOS device are the same as running in a simulator except
 you select you device from the device list.
