@@ -1,40 +1,142 @@
-# Appendix I: Creating a New Example Project
+# Appendix I: Command-Line Integration
 
 ## Prerequisite
-* Completed one of the following Appendix A-H.
+* Completed one of the Appendices A-H.
 
-## Create A New Project
+## `cocos` command-line tool
+Cocos2d-x comes with a command-line tool called `cocos`. It is a cross-platform
+tool that allows you to create new Cocos2d-x applications as well as _run_ them
+and _deploy_ them. `cocos` works for all Cocos2d-x supported platforms, which
+include: __ios__, __android__, __mac__, __linux__, __win32__, __wp8_1__ and
+__web__. You don't need to use an IDE unless you want to. It has many options,
+so let's go through them grouped by function.
 
-### OS X and Linux users.
+## Testing your path for `cocos`
+It is necessary for `cocos` to be in your path or to specify the complete path
+to it when using it. An easy test:
+```
+$ cocos -v
+```
+If you see output like `1.2` you are all set. If you see anything else you need
+to either add the location to your PATH or run `source ~/.bash_profile` or specify
+the full path to `<cocos root>\tools\cocos2d-console\bin`.
 
-		$ cd Cocos2d-x
-		$ ./setup.py
-		$ source ~/.bash_profile
-		$ cocos new MyGame -p com.MyCompany.MyGame -l cpp -d ~/MyCompany
+## Creating a new project
+To create a new project you use the `cocos new` command. The command is formatted as:
+```
+cocos new __game name__ -p __package identifier__ -l __language__ -d __location__
+```
+Examples:
+```
+cocos new MyGame -p com.MyCompany.MyGame -l cpp -d ~/MyCompany
 
-![](I-img/1.png "")
+cocos new MyGame -p com.MyCompany.MyGame -l lua -d ~/MyCompany
 
-* `MyGame`: name of your project
-* `-p com.MyCompany.MyGame`: package name for android
-* `-l cpp`: programming language used for the project, valid value is `cpp`and `lua`
-* `-d ~/MyCompany`: directory to hold your project
+cocos new MyGame -p com.MyCompany.MyGame -l js -d ~/MyCompany
+```
+You can run `cocos new --help` to see even more options as well as platform
+specific options.
 
-		$ cocos run -s ~/MyCompany/MyGame -p ios
+## Compiling a project
+As you make changes to your code it is necessary to compile it. We all know this
+has to happen, let's go through it. The command is formatted as:
+```
+cocos compile -s __path to your project__ -p __platform__ -m __mode__ -o __output directory__
+```
+Examples:
+```
+cocos compile -s ~/MyCompany/MyGame -p ios -m release -o ~/MyCompany/MyGame/bin
 
-* `-s`: directory of the new project. This could be an absolute path or a relative path.
-* `-p`: which platform to run on. Options are `ios`,`android`,`win32`,`mac` and `linux`.
+cocos compile -s ~/MyCompany/MyGame -p android -m release -o ~/MyCompany/MyGame/bin
 
-![](I-img/2.png "")
+cocos compile -s c:\MyCompany\MyGame -p win32 -m release -o c:\MyCompany\MyGame\bin
 
-(Note: You are a tmux user, you should add `reattach-to-user-namespace` before the
-command `cocos`. For more information, please refer to
-[https://github.com/phonegap/ios-sim](https://github.com/phonegap/ios-sim) for
-more information.)
+cocos compile -s ~/MyCompany/MyGame -p mac -m release -o ~/MyCompany/MyGame/bin
 
-You can run `cocos run --help` for more detail information.
+cocos compile -s ~/MyCompany/MyGame -p linux -m release -o ~/MyCompany/MyGame/bin
 
-### Win32 Users
-using `cmd` as your shell: `cd Cocos2d-x-3.1.1\tools\cocos2d-console\bin` or to
-wherever you have this on your filesystem
+cocos compile -s c:\MyCompany\MyGame -p wp8_1 -m release -o c:\MyCompany\MyGame\bin
 
-		`cocos.py new YourGameTitle -p com.yourcompany.gametitle -l cpp -d C:\YourGameTitle`
+cocos compile -s ~/MyCompany/MyGame -p web -m release -o ~/MyCompany/MyGame/bin
+```
+There is a lot going on here so let's go over the finer points. `-p` is the __platform__
+you are compiling for. `-m` is mode, __debug__ or __release__ with the default
+being __debug__ if this parameter is not specified.
+
+You can also specify an optional parameter `-q` for __quiet__. This lessens the
+output that is outputted to the console. Taking an example from above:
+```
+cocos compile -q -s ~/MyCompany/MyGame -p ios -m release -o ~/MyCompany/MyGame/bin
+```
+
+As `cocos` supports a lot of platforms there are also platform specific options
+which allow you to fine tune targeting specific SDK versions, signing code, lua
+options as well as web specific options. You can run `cocos compile --help` to see
+all available options broken down by platform.
+
+## Running a project
+Once you have created a project you can run it right from the command-line. `cocos`
+takes care of launching the environment you specify. The command is formatted as:
+```
+cocos run -s __path to your project__ -p __platform__
+```
+Examples:
+```
+cocos run -s ~/MyCompany/MyGame -p ios
+
+cocos run -s ~/MyCompany/MyGame -p android
+
+cocos run -s c:\MyCompany\MyGame -p win32
+
+cocos run -s ~/MyCompany/MyGame -p mac
+
+cocos run -s ~/MyCompany/MyGame -p linux
+
+cocos run -s c:\MyCompany\MyGame -p wp8_1
+
+cocos run -s ~/MyCompany/MyGame -p web
+```
+You can also specify to run in __debug__ or __release__ mode using the optional
+`-m` parameter. Excluding this parameter defaults to __debug__.
+```
+cocos run -s ~/MyCompany/MyGame -p ios -m release
+```
+When running for the __web__ there are additional parameters that allow you to
+specify what web browser you want to run in. You can also specify ip address and
+port. This, again is done via command-line parameters. Examples:
+```
+cocos run -s ~/MyCompany/MyGame -p web -b <add once Nite replies>
+```
+You can run `cocos run --help` to see all available options broken down by platform.
+
+## Deploy a project
+Once you are ready to ship your game `cocos` provides an easy mechanism for
+deploying it. Just like with the commands above you specify what want to do. The
+command is formatted as:
+```
+cocos deploy -s __path to your project__ -p __platform__ -m __mode__
+```
+Examples:
+```
+cocos deploy -s ~/MyCompany/MyGame -p ios -m release
+
+cocos deploy -s ~/MyCompany/MyGame -p android -m release
+
+cocos deploy -s c:\MyCompany\MyGame -p win32 -m release
+
+cocos deploy -s ~/MyCompany/MyGame -p mac -m release
+
+cocos deploy -s ~/MyCompany/MyGame -p linux -m release
+
+cocos deploy -s c:\MyCompany\MyGame -p wp8_1 -m release
+
+cocos deploy -s ~/MyCompany/MyGame -p web -m release
+
+```
+You can also specify an optional parameter `-q` for __quiet__. This lessens the
+output that is outputted to the console. Taking an example from above:
+```
+cocos deploy -q -s ~/MyCompany/MyGame -p ios -m release
+```
+
+You can run `cocos deploy --help` to see all available options broken down by platform.
