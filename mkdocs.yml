@@ -28,6 +28,7 @@ pages:
 - [G.md, 'Appx G: Windows Setup']
 - [H.md, 'Appx H: Windows Phone Setup']
 - [I.md, 'Appx I: Command-Line Integration']
+base_url: ./
 theme: readthedocs
 theme_dir: 'theme'
 copyright: Copyright &copy; 2014-2015, Chukong Technology
