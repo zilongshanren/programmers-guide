@@ -151,12 +151,12 @@ cd ..
 cp print/ProgrammersGuide.pdf print/ProgrammersGuide.epub site/.
 
 ### Copy out to slackmoehrle.github.io
-rsync -a site/ ../slackmoehrle.github.io/
-cd ../slackmoehrle.github.io
+rsync -a site/ ../slackmoehrle.github.io/programmersguide/
+cd ../slackmoehrle.github.io/programmersguide
 git add .
 git commit -m 'published automatically from script'
 git push
-cd ../programmers-guide
+cd ../../programmers-guide
 
 ## clean up for next time
 rm -rf print/
