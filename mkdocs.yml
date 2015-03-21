@@ -35,3 +35,4 @@ copyright: Copyright &copy; 2014-2015, Chukong Technology
 enable_search: true
 use_directory_urls: true
 repo_url: https://github.com/chukong/programmers-guide
+search_index: /programmersguide/
