@@ -48,10 +48,34 @@ and http://www.cocos2d-x.org/programmersguide
 
 ## How to add new content
 
+* make sure to break lines at 80 columns.
+* __chaters__ are actual book content while __apendix__ are installation and tools
 * via a `pull request`. Please do not edit chapters directly.
-* If you are creating a new chapter, please don't make it feel and sound like an API Reference. This is a guide suited for new users (even though advanced users will benefit too). Please tell a story about your content. We want to make this engage the user. If in doubt: Read Chapter 2 and notice it feels like a chapter in a book.
+* If you are creating a new chapter, please don't make it feel and sound like an
+API Reference. This is a guide suited for new users (even though advanced users
+will benefit too). Please tell a story about your content. We want to make this
+engage the user. If in doubt: Read Chapter 2 and notice it feels like a chapter
+in a book.
 * Contact me via e-mail or on the forums to discuss what you want to add, edit, etc.
+* `drafts` are chapters that are under construction or review and not yet approved
+for the guide. (i.e new material). If you are adding to an existing chapter or
+appendix, please do so via a pull request.
+* each chapter has a markdown file and 3 image directories associated with it.
+The image directories are `-web`, `-print` and `-img`.  `-web` is properly sized
+images for displaying on the web. `print` is properly sized images for displaying
+in the __epub__ and __pdf__. `-img` is were to put the original images (also
+displayed when viewing from GitHub).
+* the `build.sh` script does copying and renaming of directories during the build
+process since the markdown files expects files at a specific path. Take a look.
+* If a chapter does not have any images there is no need to create directories
+for it.
 
+## cleaning up the build script
+* since I started this I know a lot more and want to clean up the build script
+to be generic and sub functions instead of a single long script. I plan to do this
+in the next version.
+* we will be moving away from `pandoc` in favor of `PrinceXML` to build the PDF.
+* we will be using `grip` to generate HTML output for the print versions.
 
 ## I found an error
 
@@ -77,7 +101,7 @@ Appendices
  - [Appendix F - Linux Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/F.md)
  - [Appendix G - Win32 Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/G.md)
  - [Appendix H - WP8 Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/H.md)
- - [Appendix I - Creating A New Example Project](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/I.md)
+ - [Appendix I - Cocos Command-Line Tool Project](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/I.md)
 
 Chapters
 --------
