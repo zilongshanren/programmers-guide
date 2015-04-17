@@ -49,7 +49,7 @@ and http://www.cocos2d-x.org/programmersguide
 ## How to add new content
 
 * make sure to break lines at 80 columns.
-* __chaters__ are actual book content while __apendix__ are installation and tools
+* __chapters__ are actual book content while __appendix__ are installation and tools
 * via a `pull request`. Please do not edit chapters directly.
 * If you are creating a new chapter, please don't make it feel and sound like an
 API Reference. This is a guide suited for new users (even though advanced users
