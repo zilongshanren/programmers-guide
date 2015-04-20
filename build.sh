@@ -41,7 +41,7 @@ cleanUp() {
 deployToGitHub() {
   echo "deploying to GitHub Pages: ..."
   rsync -a site/ ../ChukongUSA.github.io/programmers-guide
-  cd ./ChukongUSA.github.io/programmers-guide
+  cd ../ChukongUSA.github.io/programmers-guide
   git add .
   git commit -m 'published automatically from script'
   git push
@@ -92,7 +92,7 @@ buildPrint() {
   ## create HTML docs from the markdown files in the above array
   echo "building print version..."
   for i in "${allDocuments[@]}"; do
-    grip --user slackmoehrle --pass jerseyShoreAWWoW$ --gfm print/${i}.md --export print/${i}.html
+    grip --user <user> --pass <pass> --gfm print/${i}.md --export print/${i}.html
 
     ## insert the proper style that princeXML needs
     strToInsert='<style> @page { prince-shrink-to-fit: none } .repository-content {width: 900px ! important;} @page { margin: 40pt 10pt 40pt 10pt;}</style>'
