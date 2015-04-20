@@ -7,28 +7,20 @@ This is the Cocos2d-x programmers guide. It is licensed under the
 
 ## Directory layout
 
-* `_layout.html5` - used for `pandoc` print page layout
 * `blank.md` - a blank page that is used when building print versions
 * `build.sh` - BASH script that build web and print versions, deploys to server
 * `chapters` - markdown content and images
-* `main.css` - CSS for print version
 * `mkdocs.yml` - MKDocs configuration
 * `outline.md` - outline of what this guide covers (may be out of date)
 * `README.md` - this file :-)
-* `solarized-light.css` - CSS for print version
-* `style.css` - CSS for print version
 * `theme` - custom theme for web version
 
 ## What do you need to build for OS X?
 
 * mkdocs: http://www.mkdocs.org/
-* gpp: brew install gpp http://brew.sh/
 * Bash 4.0: brew install bash
-* Pandoc: http://johnmacfarlane.net/pandoc/getting-started.html
-* A LaTex Distribution: http://www.tug.org/mactex/downloading.html
-* run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr update --self
-* run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr  install collection-fontsrecommended
-* run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr install ec ecc
+* Grip - https://github.com/joeyespo/grip
+* PrinceXML - https://princexml.com
 
 ## How to run/test
 
@@ -89,33 +81,33 @@ in the next version.
 * each chapter has a compilable source code sample to demonstrate concepts.
 
 
-[Outline.md](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/outline.md) - outline of what the guide will cover (may be out of date)
+[Outline.md](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/outline.md) - outline of what the guide will cover (may be out of date)
 
 Appendices
---------
- - [Appendix A - Prerequisites](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/A.md)
- - [Appendix B - Android with Terminal Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/B.md)
- - [Appendix C - Android with Eclipse Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/C.md)
- - [Appendix D - iOS Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/D.md)
- - [Appendix E - Mac OSX Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/E.md)
- - [Appendix F - Linux Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/F.md)
- - [Appendix G - Win32 Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/G.md)
- - [Appendix H - WP8 Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/H.md)
- - [Appendix I - Cocos Command-Line Tool Project](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/I.md)
+----------
+ - [Appendix A - Prerequisites](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/A.md)
+ - [Appendix B - Android with Terminal Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/B.md)
+ - [Appendix C - Android with Eclipse Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/C.md)
+ - [Appendix D - iOS Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/D.md)
+ - [Appendix E - Mac OSX Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/E.md)
+ - [Appendix F - Linux Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/F.md)
+ - [Appendix G - Win32 Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/G.md)
+ - [Appendix H - WP8 Installation and Setup](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/H.md)
+ - [Appendix I - Command-Line Integration Project](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/I.md)
 
 Chapters
 --------
- - [Chapter 01 - About](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/1.md)
- - [Chapter 02 - Basic concepts and essentials](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/2.md)
- - [Chapter 03 - Sprites](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/3.md)
- - [Chapter 04 - Actions](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/4.md)
- - [Chapter 05 - Building and Transitioning Scenes](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/5.md)
- - [Chapter 06 - UI](https://github.com/chukong/programmers-guide/blob/v3.3/drafts/6.md)
- - [Chapter 07 - Other Node Types](https://github.com/chukong/programmers-guide/blob/v3.3/drafts/7.md)
- - [Chapter 08 - Event Dispatcher](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/8.md)
- - [Chapter 09 - 3D](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/9.md)
- - [Chapter 10 - Lua](https://github.com/chukong/programmers-guide/blob/v3.3/drafts/10.md)
- - [Chapter 11 - Services](https://github.com/chukong/programmers-guide/blob/v3.3/drafts/11.md)
- - [Chapter 12 - Physics](https://github.com/chukong/programmers-guide/blob/v3.3/drafts/12.md)
- - [Chapter 13 - Audio](https://github.com/chukong/programmers-guide/blob/v3.3/chapters/13.md)
- - [Chapter 14 - Advanced Topics](https://github.com/chukong/programmers-guide/blob/v3.3/drafts/14.md)
+ - [Chapter 01 - About](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/1.md)
+ - [Chapter 02 - Basic concepts and essentials](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/2.md)
+ - [Chapter 03 - Sprites](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/3.md)
+ - [Chapter 04 - Actions](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/4.md)
+ - [Chapter 05 - Building and Transitioning Scenes](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/5.md)
+ - [Chapter 06 - UI](https://github.com/chukong/programmers-guide/blob/v3.6/drafts/6.md)
+ - [Chapter 07 - Other Node Types](https://github.com/chukong/programmers-guide/blob/v3.6/drafts/7.md)
+ - [Chapter 08 - Event Dispatcher](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/8.md)
+ - [Chapter 09 - 3D](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/9.md)
+ - [Chapter 10 - Lua](https://github.com/chukong/programmers-guide/blob/v3.6/drafts/10.md)
+ - [Chapter 11 - Services](https://github.com/chukong/programmers-guide/blob/v3.6/drafts/11.md)
+ - [Chapter 12 - Physics](https://github.com/chukong/programmers-guide/blob/v3.6/drafts/12.md)
+ - [Chapter 13 - Audio](https://github.com/chukong/programmers-guide/blob/v3.6/chapters/13.md)
+ - [Chapter 14 - Advanced Topics](https://github.com/chukong/programmers-guide/blob/v3.6/drafts/14.md)
