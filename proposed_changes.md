@@ -1,0 +1,25 @@
+* programmers-guide
+  * chapters
+    * ch 1
+      * images
+        * img
+          * image.png
+          * image.png
+        * web
+          * image.png
+          * image.png
+        * print
+          * image.png
+          * image.png
+      * code
+        * cpp
+          * somecode.md
+          * somecode.md
+        * js
+          * somecode.md
+          * somecode.md
+        * lua
+          * somecode.md
+          * somecode.md
+      * chapter.md
+      * chapter.layout
